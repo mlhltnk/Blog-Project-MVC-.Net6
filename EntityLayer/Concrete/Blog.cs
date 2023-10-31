@@ -23,5 +23,10 @@ namespace EntityLayer.Concrete
 
         public bool BlogStatus { get; set; }
 
+        public int CategoryId { get; set; }  //bire çok ilişkide çokun olduğu tarafta foreing key tanımlamamız gerekiyor.
+
+        public Category Category { get; set; }  //bir blogun bir categorysi olabilir
+
+        public List<Comment> Comments { get; set; }
     }
 }
