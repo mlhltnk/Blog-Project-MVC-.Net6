@@ -245,6 +245,278 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\about.html",
+      "PackagePath": "staticwebassets\\web\\about.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\blog1.html",
+      "PackagePath": "staticwebassets\\web\\blog1.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\blog2.html",
+      "PackagePath": "staticwebassets\\web\\blog2.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\blog3.html",
+      "PackagePath": "staticwebassets\\web\\blog3.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\contact.html",
+      "PackagePath": "staticwebassets\\web\\contact.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\web\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\css\\contact.css",
+      "PackagePath": "staticwebassets\\web\\css\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\css\\fontawesome-all.css",
+      "PackagePath": "staticwebassets\\web\\css\\fontawesome-all.css"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\css\\jquery.desoslide.css",
+      "PackagePath": "staticwebassets\\web\\css\\jquery.desoslide.css"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\css\\single.css",
+      "PackagePath": "staticwebassets\\web\\css\\single.css"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\css\\style.css",
+      "PackagePath": "staticwebassets\\web\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\2.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\3.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\4.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\5.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\6.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\7.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\8.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\Thumbs.db",
+      "PackagePath": "staticwebassets\\web\\images\\Thumbs.db"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\b1.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\b1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\b2.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\b2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\b3.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\b3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\b4.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\b4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\b5.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\b5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\banner1.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\banner1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\banner2.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\banner2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\banner3.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\banner3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\banner4.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\banner4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\banner5.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\banner5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\left.png",
+      "PackagePath": "staticwebassets\\web\\images\\left.png"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\m1.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\m1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\m2.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\m2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\m3.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\m3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\m4.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\m4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\right.png",
+      "PackagePath": "staticwebassets\\web\\images\\right.png"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\t1.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\t1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\t2.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\t2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\t3.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\t3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\t4.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\t4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\images\\top_up.png",
+      "PackagePath": "staticwebassets\\web\\images\\top_up.png"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\index.html",
+      "PackagePath": "staticwebassets\\web\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\web\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\js\\easing.js",
+      "PackagePath": "staticwebassets\\web\\js\\easing.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\js\\jquery-2.2.3.min.js",
+      "PackagePath": "staticwebassets\\web\\js\\jquery-2.2.3.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\js\\jquery.desoslide.js",
+      "PackagePath": "staticwebassets\\web\\js\\jquery.desoslide.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\js\\jquery.flexisel.js",
+      "PackagePath": "staticwebassets\\web\\js\\jquery.flexisel.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\js\\modernizr.custom.min.js",
+      "PackagePath": "staticwebassets\\web\\js\\modernizr.custom.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\js\\move-top.js",
+      "PackagePath": "staticwebassets\\web\\js\\move-top.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\login.html",
+      "PackagePath": "staticwebassets\\web\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\register.html",
+      "PackagePath": "staticwebassets\\web\\register.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\single.html",
+      "PackagePath": "staticwebassets\\web\\single.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\w3layouts-license.txt",
+      "PackagePath": "staticwebassets\\web\\w3layouts-license.txt"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\web\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\web\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\web\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\web\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\web\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\web\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\web\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\web\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\web\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\web\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\web\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\web\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\web\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\web\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\web\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\web\\webfonts\\fa-solid-900.woff2"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Blog_MVC.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
