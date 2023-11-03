@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,6 +20,10 @@ namespace DataAccessLayer.Abstract
 
         T GetById(int id);  //dışarıdan verilen idye göre getir
 
-
+        List<T> GetListAll(Expression<Func<T, bool>> filter); 
+        //bloga göre listeleme yapabilmem için lambda expressiondan faydalanıyorum
+        //liste türünde bir T değeri tanımladık(ismi list olan)
+        //şartlı srgulama ve listeleme işleminde expression kullanılıyor.
+        //expression<func<t, çıkış değeri>>filter (filter parametre değeri);
     }
 }
