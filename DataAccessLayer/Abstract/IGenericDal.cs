@@ -20,10 +20,11 @@ namespace DataAccessLayer.Abstract
 
         T GetById(int id);  //dışarıdan verilen idye göre getir
 
-        List<T> GetListAll(Expression<Func<T, bool>> filter); 
-        //bloga göre listeleme yapabilmem için lambda expressiondan faydalanıyorum
-        //liste türünde bir T değeri tanımladık(ismi list olan)
-        //şartlı srgulama ve listeleme işleminde expression kullanılıyor.
-        //expression<func<t, çıkış değeri>>filter (filter parametre değeri);
-    }
+        List<T> GetListAll(Expression<Func<T, bool>> filter);
+		//Bu metot filtre kullanarak belirli bir türdeki öğelerin bir listesini döndürmeyi amaçlar. filter parametresi aracılığıyla belirli koşulları sağlayan öğelerin listesini döndürecektir
+		//Şartlı sorgulama ve listeleme işleminde expression kullanılır
+		//bloga göre listeleme yapabilmem için lambda expressiondan faydalanıyorum
+		//liste türünde bir T değeri tanımladık(ismi GetlistAll olan)
+		//expression<func<t, çıkış değeri>>filter (filter parametre değeri);
+	}
 }

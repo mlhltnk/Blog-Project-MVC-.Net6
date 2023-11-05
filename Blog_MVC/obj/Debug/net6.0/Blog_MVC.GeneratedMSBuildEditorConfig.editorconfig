@@ -16,8 +16,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/Blog/BlogDetails.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xCbG9nRGV0YWlscy5jc2h0bWw=
+[C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/Blog/BlogReadAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xCbG9nUmVhZEFsbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/Blog/Index.cshtml]
@@ -28,12 +28,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/Comment/CommentListByBLog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxDb21tZW50TGlzdEJ5QkxvZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/Comment/PartialAddComment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxQYXJ0aWFsQWRkQ29tbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/Shared/Components/CommentListByBlog/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29tbWVudExpc3RCeUJsb2dcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/Shared/Components/CommentList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29tbWVudExpc3RcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/Shared/Error.cshtml]

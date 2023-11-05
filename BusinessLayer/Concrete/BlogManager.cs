@@ -45,12 +45,14 @@ namespace BusinessLayer.Concrete
 
 		public List<Blog> Getlist()
 		{
-			return _blogdal.GetListAll();
+			return _blogdal.GetListAll();  //tüm blog listesini getir
 		}
 
 		public List<Blog> GetBlogByID(int id)  //ID'ye göre blog getir
 		{
 			return _blogdal.GetListAll(x => x.BlogID == id);
+			//GetBlogByID metodu, _blogdal üzerinden GetListAll metodunu kullanarak belirtilen ID'ye sahip blog gönderilerini getirir ve listesini döndürür
+			//Burada; belirtilen ID'ye sahip blog gönderilerini getirilmesi işlemi, GenericRepository'de belirtilen "filter" değerine karşılık gelir.
 		}
 	}
 }

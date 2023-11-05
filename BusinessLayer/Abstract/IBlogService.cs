@@ -19,7 +19,7 @@ namespace BusinessLayer.Abstract
 
 		Blog GetById(int id);
 
-		List<Blog> GetBlogListWithCategory();  //kategori ile beraber listeyi getir diye isim verdim
+		List<Blog> GetBlogListWithCategory();  //BLog sayfasında category listesini getirme işlemi
 
 	}
 }

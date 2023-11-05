@@ -41,7 +41,9 @@ namespace DataAccessLayer.Repositories
 		public List<T> GetListAll(Expression<Func<T, bool>> filter)
 		{
 			using var c = new Context();
-			return c.Set<T>().Where(filter).ToList();   //filterdan gelen değere göre listeleme işlemi gerçekleştirir
+			return c.Set<T>().Where(filter).ToList();   //filterdan gelecek olan değere göre listeleme işlemi gerçekleştirir
+                                                        //filter'ın içeriği ...Manager'larda linq sorgularla dolduruluyor.
+                                                        //Buraya direk LINQ sorgusunu yazmama sebebi genel bir ifade yazmak ve herkesin kullanabilmesini sağlamak.
 		}
 
 		public void Update(T t)

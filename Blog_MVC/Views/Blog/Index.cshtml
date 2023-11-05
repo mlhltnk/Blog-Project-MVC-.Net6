@@ -19,7 +19,7 @@
 					@foreach (var item in Model)
 					{
 					<div class="col-lg-4 card">
-						<a href="single.html">
+							<a href="/Blog/BlogReadAll/@item.BlogID">
 							<img src="@item.BlogImage" class="card-img-top img-fluid" alt="">
 						</a>
 						<div class="card-body">
@@ -37,20 +37,20 @@
 									</a>
 								</li>
 								<li>
-									<a href="#">
+										<a href="#">
 										<i class="fas fa-eye"></i> @item.Category.CategoryName
 									</a>
 								</li>
 
 							</ul>
 							<h5 class="card-title">
-								<a href="single.html">@item.BlogTitle</a>
+									<a href="/Blog/BlogReadAll/@item.BlogID">@item.BlogTitle</a>
 							</h5>
 							<p class="card-text mb-3">@item.BlogContent.Substring(0,item.BlogContent.Substring(0,120).LastIndexOf(" "))... </p>
 							@*Substring ile; 0'dan 120 karaktere kadar olan kısmı gösterir devamını saklar*@
 							@*LastIndexOf; burada parantezde tanımladığımız karşılaştığı değere kadar(burada boşluk tanımladık) olan kısmı gösterir. Bu sayede kelimeyi yarım bırakmamış olduk*@
 
-							<a href="/Blog/BlogDetails/@item.BlogID" class="btn btn-primary read-m">Devamını Oku</a>
+							<a href="/Blog/BlogReadAll/@item.BlogID" class="btn btn-primary read-m">Devamını Oku</a>
 						</div>
 					</div>
 					}

@@ -13,7 +13,7 @@ namespace DataAccessLayer.EntityFramework
 {
 	public class EfBlogRepository : GenericRepository<Blog>, IBlogDal
 	{
-		public List<Blog> GetListWithCategory()
+		public List<Blog> GetListWithCategory()   //burada tanımlanma sebebi bu metotu genel olarak IGenericDal da değilde IBlogdalDal oluşturulmuş olmasıdır.
 		{
 			using (var c = new Context())
 			{
