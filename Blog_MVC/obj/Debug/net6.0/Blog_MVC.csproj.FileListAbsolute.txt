@@ -253,3 +253,7 @@ C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\runtimes\unix
 C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\obj\Debug\net6.0\Blog_MVC.MvcApplicationPartsAssemblyInfo.cs

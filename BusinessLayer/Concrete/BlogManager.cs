@@ -54,5 +54,10 @@ namespace BusinessLayer.Concrete
 			//GetBlogByID metodu, _blogdal üzerinden GetListAll metodunu kullanarak belirtilen ID'ye sahip blog gönderilerini getirir ve listesini döndürür
 			//Burada; belirtilen ID'ye sahip blog gönderilerini getirilmesi işlemi, GenericRepository'de belirtilen "filter" değerine karşılık gelir.
 		}
+
+		public List<Blog> GetBlogListByWriter(int id)
+		{
+			return _blogdal.GetListAll(x => x.WriterId == id);  //writerid'si dışardan gelen id'ye eşit olanları listele
+		}
 	}
 }

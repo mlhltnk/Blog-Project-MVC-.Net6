@@ -28,6 +28,10 @@ namespace EntityLayer.Concrete
 
         public Category Category { get; set; }  //bir blogun bir categorysi olabilir
 
-        public List<Comment> Comments { get; set; }
+		public int WriterId { get; set; }  //bire çok ilişkide çokun olduğu tarafta foreing key tanımlamamız gerekiyor.
+
+		public Writer Writer { get; set; }  //bir writerın bir categorysi olabilir
+
+		public List<Comment> Comments { get; set; }
     }
 }
