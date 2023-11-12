@@ -76,13 +76,14 @@
 						</div>
 					
 
-						@await Html.PartialAsync("~/Views/Newsletter/SubscribeMail.cshtml")
-						
+						@await Html.PartialAsync("~/Views/Newsletter/SubscribeMail.cshtml")    @*Mailinle abone ol kısmı*@
+
+
 						@await Component.InvokeAsync("CategoryList")  @*ViewComponent Kullanımı*@
 
 
 						
-						@await Component.InvokeAsync("WriterLastBlog")
+						@await Component.InvokeAsync("WriterLastBlog")   @*//YAZARIN SON BLOGLARI KISMINI GETİRİYOR*@
 
 
 						<div class="single-gd my-5 tech-btm">

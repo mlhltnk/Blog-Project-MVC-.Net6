@@ -20,7 +20,17 @@ namespace Blog_MVC.Controllers
 		{
 			p.MailStatus = true;
 			nm.AddNewsLetter(p);
+			Response.Redirect("/Blog/BlogReadAll/" + 1);   //aynı sayfada bulunan abone ol kısmında; mail adresini girerek başka bir db'ye kaydettirme işlemi
 			return PartialView();
+
+			/* public IActionResult SubscribeMail(NewsLetter p)          --> üsttekinin başka bir yöntemi 
+		{
+			p.MailStatus = true;
+			nm.AddNewsLetter(p);
+			return RedirectToAction("Index","Blog");
+		}
+			*/
 		}
 	}
 }
+
