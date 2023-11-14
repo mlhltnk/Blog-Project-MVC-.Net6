@@ -3,10 +3,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Blog_MVC.Controllers
 {
-	[Authorize]
+
 	public class WriterController : Controller
 	{
-		
+	
 		public IActionResult Index()
 		{
 			return View();
