@@ -48,6 +48,11 @@ namespace BusinessLayer.Concrete
 			return _blogdal.GetListAll();  //tüm blog listesini getir
 		}
 
+		public List<Blog> GetLast3Blog()       //bunun soyutunu yapmadık direk burada oluşturduk
+		{
+			return _blogdal.GetListAll().Take(3).ToList(); ;  //son 3 blogu getir(footerda kullanıyoruz)
+		}
+
 		public List<Blog> GetBlogByID(int id)  //ID'ye göre blog getir
 		{
 			return _blogdal.GetListAll(x => x.BlogID == id);
