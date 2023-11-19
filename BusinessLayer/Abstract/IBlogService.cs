@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Abstract
 {
-	public interface IBlogService
+	public interface IBlogService:IGenericService<Blog>
 	{
-		void BlogAdd(Blog blog);
+		//void BlogAdd(Blog blog);
 
-		void BlogDelete(Blog blog);
+		//void BlogDelete(Blog blog);
 
-		void BlogUpdate(Blog blog);
+		//void BlogUpdate(Blog blog);
 
-		List<Blog> Getlist();
+		//List<Blog> Getlist();
 
-		Blog GetById(int id);
+		//Blog GetById(int id);
 
 		List<Blog> GetBlogListWithCategory();  //Blog->index sayfasında categoryleri getirme işlemi(blog listesini kategori ile getir)
 

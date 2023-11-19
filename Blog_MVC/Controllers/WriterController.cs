@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using NuGet.Protocol;
 
 namespace Blog_MVC.Controllers
 {
@@ -21,6 +22,21 @@ namespace Blog_MVC.Controllers
 		public IActionResult WriterMail()
 		{
 			return View();
+		}
+
+		public IActionResult Test()
+		{
+			return View();
+		}
+
+		public PartialViewResult WriterNavbarPartial()
+		{
+			return PartialView();
+		}
+
+		public PartialViewResult WriterFooterPartial()
+		{
+			return PartialView();
 		}
 	}
 }

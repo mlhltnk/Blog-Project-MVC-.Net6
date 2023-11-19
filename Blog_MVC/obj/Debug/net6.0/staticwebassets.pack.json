@@ -561,6 +561,622 @@
       "PackagePath": "staticwebassets\\weberror\\w3layouts-license.txt"
     },
     {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\.DS_Store",
+      "PackagePath": "staticwebassets\\webwriter\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\.gitignore",
+      "PackagePath": "staticwebassets\\webwriter\\.gitignore"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\CHANGELOG.md",
+      "PackagePath": "staticwebassets\\webwriter\\CHANGELOG.md"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\LICENSE",
+      "PackagePath": "staticwebassets\\webwriter"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\PSD\\.DS_Store",
+      "PackagePath": "staticwebassets\\webwriter\\PSD\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\PSD\\Purple_dashboard_free.psd",
+      "PackagePath": "staticwebassets\\webwriter\\PSD\\Purple_dashboard_free.psd"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\README.md",
+      "PackagePath": "staticwebassets\\webwriter\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\css\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.eot",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.ttf",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.woff",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.woff2",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Light.eot",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Light.eot"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Light.ttf",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Light.woff",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Light.woff2",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.eot",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.eot"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.ttf",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.woff",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.woff"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.woff2",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Medium.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.eot",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.ttf",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.woff",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.woff2",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\fonts\\Ubuntu\\Ubuntu-Regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\dashboard\\circle.png",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\dashboard\\circle.png"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\dashboard\\circle.svg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\dashboard\\circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\dashboard\\img_1.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\dashboard\\img_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\dashboard\\img_2.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\dashboard\\img_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\dashboard\\img_3.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\dashboard\\img_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\dashboard\\img_4.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\dashboard\\img_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces-clipart\\pic-1.png",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces-clipart\\pic-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces-clipart\\pic-2.png",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces-clipart\\pic-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces-clipart\\pic-3.png",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces-clipart\\pic-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces-clipart\\pic-4.png",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces-clipart\\pic-4.png"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face1.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face10.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face11.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face12.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face13.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face14.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face15.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face16.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face17.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face18.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face19.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face2.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face20.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face21.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face22.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face23.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face23.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face24.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face24.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face25.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face26.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face26.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face27.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face27.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face3.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face4.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face5.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face6.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face7.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face8.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\faces\\face9.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\faces\\face9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\logo-mini.svg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\logo-mini.svg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\logo.svg",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\sprites\\blue.png",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\sprites\\blue.png"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\sprites\\dark.png",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\sprites\\dark.png"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\sprites\\flag.png",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\sprites\\flag.png"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\sprites\\green.png",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\sprites\\green.png"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\sprites\\jsgrid-icons.png",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\sprites\\jsgrid-icons.png"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\sprites\\red.png",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\sprites\\red.png"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\images\\sprites\\yellow.png",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\images\\sprites\\yellow.png"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\js\\chart.js",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\js\\chart.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\js\\dashboard.js",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\js\\dashboard.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\js\\file-upload.js",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\js\\file-upload.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\js\\hoverable-collapse.js",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\js\\hoverable-collapse.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\js\\misc.js",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\js\\misc.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\js\\off-canvas.js",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\js\\off-canvas.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\js\\todo.js",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\js\\todo.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\js\\todolist.js",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\js\\todolist.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\_dashboard.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\_dashboard.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\_demo.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\_demo.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\_fonts.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\_fonts.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\_footer.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\_functions.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\_layouts.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\_layouts.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\_misc.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\_misc.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\_navbar.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\_reset.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\_reset.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\_sidebar.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\_sidebar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\_typography.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\_typography.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\_utilities.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\_vertical-wrapper.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\_vertical-wrapper.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\_widget-grid.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\_widget-grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\components\\_badges.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\components\\_badges.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\components\\_bootstrap-progress.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\components\\_bootstrap-progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\components\\_breadcrumbs.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\components\\_breadcrumbs.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\components\\_buttons.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\components\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\components\\_cards.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\components\\_cards.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\components\\_checkbox-radio.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\components\\_checkbox-radio.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\components\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\components\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\components\\_forms.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\components\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\components\\_icons.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\components\\_icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\components\\_lists.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\components\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\components\\_preview.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\components\\_preview.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\components\\_tables.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\components\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\components\\_todo-list.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\components\\_todo-list.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\landing-screens\\_auth.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\landing-screens\\_auth.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\mixins\\_animation.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\mixins\\_animation.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\mixins\\_background.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\mixins\\_background.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\mixins\\_badges.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\mixins\\_badges.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\mixins\\_blockqoute.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\mixins\\_blockqoute.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\mixins\\_breadcrumbs.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\mixins\\_breadcrumbs.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\mixins\\_cards.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\mixins\\_cards.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\mixins\\_misc.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\mixins\\_misc.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\mixins\\_popovers.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\mixins\\_popovers.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\mixins\\_text.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\mixins\\_text.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\mixins\\_tooltips.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\mixins\\_tooltips.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\scss\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\vendors\\chart.js\\Chart.min.js",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\vendors\\chart.js\\Chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\vendors\\css\\vendor.bundle.base.css",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\vendors\\css\\vendor.bundle.base.css"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\vendors\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\vendors\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\vendors\\js\\vendor.bundle.base.js",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\vendors\\js\\vendor.bundle.base.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\vendors\\mdi\\css\\materialdesignicons.min.css",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\vendors\\mdi\\css\\materialdesignicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\vendors\\mdi\\css\\materialdesignicons.min.css.map",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\vendors\\mdi\\css\\materialdesignicons.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.eot",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.ttf",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2",
+      "PackagePath": "staticwebassets\\webwriter\\assets\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\gulp-tasks\\inject.js",
+      "PackagePath": "staticwebassets\\webwriter\\gulp-tasks\\inject.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\gulp-tasks\\serve.js",
+      "PackagePath": "staticwebassets\\webwriter\\gulp-tasks\\serve.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\gulp-tasks\\vendors.js",
+      "PackagePath": "staticwebassets\\webwriter\\gulp-tasks\\vendors.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\gulpfile.js",
+      "PackagePath": "staticwebassets\\webwriter\\gulpfile.js"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\index.html",
+      "PackagePath": "staticwebassets\\webwriter\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\package.json",
+      "PackagePath": "staticwebassets\\webwriter\\package.json"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\pages\\charts\\chartjs.html",
+      "PackagePath": "staticwebassets\\webwriter\\pages\\charts\\chartjs.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\pages\\forms\\basic_elements.html",
+      "PackagePath": "staticwebassets\\webwriter\\pages\\forms\\basic_elements.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\pages\\icons\\mdi.html",
+      "PackagePath": "staticwebassets\\webwriter\\pages\\icons\\mdi.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\pages\\samples\\blank-page.html",
+      "PackagePath": "staticwebassets\\webwriter\\pages\\samples\\blank-page.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\pages\\samples\\error-404.html",
+      "PackagePath": "staticwebassets\\webwriter\\pages\\samples\\error-404.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\pages\\samples\\error-500.html",
+      "PackagePath": "staticwebassets\\webwriter\\pages\\samples\\error-500.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\pages\\samples\\login.html",
+      "PackagePath": "staticwebassets\\webwriter\\pages\\samples\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\pages\\samples\\register.html",
+      "PackagePath": "staticwebassets\\webwriter\\pages\\samples\\register.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\pages\\tables\\basic-table.html",
+      "PackagePath": "staticwebassets\\webwriter\\pages\\tables\\basic-table.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\pages\\ui-features\\buttons.html",
+      "PackagePath": "staticwebassets\\webwriter\\pages\\ui-features\\buttons.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\pages\\ui-features\\typography.html",
+      "PackagePath": "staticwebassets\\webwriter\\pages\\ui-features\\typography.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\partials\\_footer.html",
+      "PackagePath": "staticwebassets\\webwriter\\partials\\_footer.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\partials\\_navbar.html",
+      "PackagePath": "staticwebassets\\webwriter\\partials\\_navbar.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\partials\\_sidebar.html",
+      "PackagePath": "staticwebassets\\webwriter\\partials\\_sidebar.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\screenshot.jpg",
+      "PackagePath": "staticwebassets\\webwriter\\screenshot.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Blog_MVC.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
