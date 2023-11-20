@@ -23,5 +23,15 @@ namespace DataAccessLayer.EntityFramework
 			}
 			
 		}
-	}
+
+        public List<Blog> GetListWithCategoryByWriter(int id)
+        {
+            using (var c = new Context())
+            {
+                return c.Blogs.Include(x => x.Category).Where(x=>x.WriterId==id).ToList();
+
+                //hangi entity include edilecek(dahil edilecek)se o yazılır-->kategori tablosuna ait değerleri bize getirecek ancak girdiğimiz id değeri writerid ye eşit olanları getirecek
+            }
+        }
+    }
 }

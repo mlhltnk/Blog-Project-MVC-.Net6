@@ -13,5 +13,7 @@ namespace DataAccessLayer.Abstract
 
         List<Blog> GetListWithCategory();    //Blog sayfasında kategorileri getir.
                                             //blog ve categori tablosunda ilişki var. bu senaryolarda bu şekilde kullanılır.
+    
+        List<Blog> GetListWithCategoryByWriter(int id);    //blog sayfasında categorileri getir ancak yazara göre getir. dışardan da bir id al
     }
 }

@@ -36,7 +36,7 @@ namespace BusinessLayer.Concrete
         //    _categoryDal.Update(category);
         //}
 
-        public Category GetById(int id)
+        public Category TGetById(int id)
         {
             return _categoryDal.GetById(id);
         }

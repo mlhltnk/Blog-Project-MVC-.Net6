@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,7 +34,7 @@ namespace BusinessLayer.Concrete
 		//	throw new NotImplementedException();
 		//}
 
-		public List<Blog> GetBlogListWithCategory()   //SPESİSİK İMZASI VAR
+		public List<Blog> GetBlogListWithCategory()   //SPESİFİK İMZASI VAR
 		{
 			return _blogdal.GetListWithCategory();
 		}
@@ -42,6 +43,11 @@ namespace BusinessLayer.Concrete
         {
             return _blogdal.GetListAll(x => x.WriterId == id);  //writerid'si dışardan gelen id'ye eşit olanları listele
         }
+
+		public List<Blog> GetListWithCategoryByWriterBlogManager(int id)   /*İMZASI YOK DİREK BURADA OLUŞTURDUK*/
+		{
+			return _blogdal.GetListWithCategoryByWriter(id);
+		}
 
 
 
@@ -67,7 +73,7 @@ namespace BusinessLayer.Concrete
 
         public void TDelete(Blog t)
         {
-            throw new NotImplementedException();
+			_blogdal.Delete(t);
         }
 
         public void TUpdate(Blog t)
@@ -75,10 +81,10 @@ namespace BusinessLayer.Concrete
             throw new NotImplementedException();
         }
 
-        public Blog GetById(int id)
-        {
-            throw new NotImplementedException();
-        }
+		public Blog TGetById(int id)
+		{
+			return _blogdal.GetById(id);
+		}
 
         public List<Blog> Getlist()
         {
