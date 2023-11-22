@@ -78,7 +78,7 @@ namespace BusinessLayer.Concrete
 
         public void TUpdate(Blog t)
         {
-            throw new NotImplementedException();
+          _blogdal.Update(t);
         }
 
 		public Blog TGetById(int id)
@@ -86,7 +86,7 @@ namespace BusinessLayer.Concrete
 			return _blogdal.GetById(id);
 		}
 
-        public List<Blog> Getlist()
+        public List<Blog> TGetlist()
         {
             return _blogdal.GetListAll();  //tüm blog listesini getir
         }

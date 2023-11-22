@@ -13,11 +13,15 @@ namespace Blog_MVC.Controllers
     public class BlogController : Controller
     {
         BlogManager bm = new BlogManager(new EfBlogRepository());
+
+
         public IActionResult Index()
         {
             var values = bm.GetBlogListWithCategory();
             return View(values);
         }
+
+
 
         public IActionResult BlogReadAll(int id)
         {
@@ -26,17 +30,21 @@ namespace Blog_MVC.Controllers
             return View(values);
         }
 
+
+
         public IActionResult BlogListByWriter()   //yazara göre blog listesi getir
         {
             var values= bm.GetListWithCategoryByWriterBlogManager(1);
             return View(values);
         }
 
+
+
         [HttpGet]
         public IActionResult BlogAdd()
         {  //---------------------DROPDOWNLİST KULLANIMI---------------------------------
             CategoryManager cm = new CategoryManager(new EfCategoryRepository());
-            List<SelectListItem> categoryvalues = (from x in cm.Getlist()
+            List<SelectListItem> categoryvalues = (from x in cm.TGetlist()
                                                    select new SelectListItem
                                                    {
                                                        Text = x.CategoryName,  //dropdown içinde kullanıcının gördüğü kısım
@@ -46,6 +54,8 @@ namespace Blog_MVC.Controllers
             //-------------------------DROPDOWNLİST KULLANIM------------------------------  
             return View();
         }
+
+
 
         [HttpPost]
         public IActionResult BlogAdd(Blog p)
@@ -67,11 +77,11 @@ namespace Blog_MVC.Controllers
                 {
                     ModelState.AddModelError(item.PropertyName, item.ErrorMessage);  //model durumuna hatayı veren properynin ismi ve hatanın mesajını ekle
                 }
-            }
-
-            
+            }          
             return View();
         }
+
+
 
         public IActionResult DeleteBlog(int id)
         {
@@ -79,6 +89,35 @@ namespace Blog_MVC.Controllers
             bm.TDelete(blogvalue);
             return RedirectToAction("BlogListByWriter");
         }
-    }
 
+
+
+        [HttpGet]
+        public IActionResult EditBlog(int id)
+        {
+            var blogvalue = bm.TGetById(id);
+            CategoryManager cm = new CategoryManager(new EfCategoryRepository());
+            List<SelectListItem> categoryvalues = (from x in cm.TGetlist()
+                                                   select new SelectListItem
+                                                   {
+                                                       Text = x.CategoryName,  //dropdown içinde kullanıcının gördüğü kısım
+                                                       Value = x.CategoryId.ToString()  //kullanıcıya görünmeyen kısım
+                                                   }).ToList();
+            ViewBag.cv = categoryvalues;   
+          
+            return View(blogvalue);
+        }
+
+
+
+        [HttpPost]
+        public IActionResult EditBlog(Blog p)
+        {
+            p.WriterId = 1;
+            p.BlogCreateDate = DateTime.Parse(DateTime.Now.ToShortDateString());
+            p.BlogStatus = true;
+            bm.TUpdate(p);
+            return RedirectToAction("BlogListByWriter");
+        }
+    }
 }

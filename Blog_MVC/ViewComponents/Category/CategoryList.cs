@@ -13,7 +13,7 @@ namespace Blog_MVC.ViewComponents.Category
 		//BU Sınıf BLOGREADALL SAYFASINDAKİ KATEGORİLER KISMINI GETİRİYOR
 		public IViewComponentResult Invoke()
 		{
-			var values = cm.Getlist();
+			var values = cm.TGetlist();
 			return View(values);
 		}
 	}

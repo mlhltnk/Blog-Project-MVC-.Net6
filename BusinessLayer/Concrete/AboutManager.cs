@@ -24,7 +24,7 @@ namespace BusinessLayer.Concrete
             throw new NotImplementedException();
         }
 
-        public List<About> Getlist()
+        public List<About> TGetlist()
 		{
 			return _aboutdal.GetListAll();
 		}

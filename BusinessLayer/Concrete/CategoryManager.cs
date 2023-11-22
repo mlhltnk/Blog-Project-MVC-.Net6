@@ -41,7 +41,7 @@ namespace BusinessLayer.Concrete
             return _categoryDal.GetById(id);
         }
 
-        public List<Category> Getlist()
+        public List<Category> TGetlist()
         {
             return _categoryDal.GetListAll();
         }

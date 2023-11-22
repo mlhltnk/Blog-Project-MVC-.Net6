@@ -11,7 +11,7 @@ namespace Blog_MVC.Controllers
 		AboutManager abm = new AboutManager(new EfAboutRepository());
 		public IActionResult Index()
 		{
-			var values = abm.Getlist();
+			var values = abm.TGetlist();
 			return View(values);
 		}
 

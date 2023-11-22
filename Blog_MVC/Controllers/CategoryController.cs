@@ -11,7 +11,7 @@ namespace Blog_MVC.Controllers
         //cm nesnesi ile bütün metodlarıma erişim sağlayacağım
         public IActionResult Index()
         {
-            var values = cm.Getlist();
+            var values = cm.TGetlist();
             return View(values);
         }
     }
