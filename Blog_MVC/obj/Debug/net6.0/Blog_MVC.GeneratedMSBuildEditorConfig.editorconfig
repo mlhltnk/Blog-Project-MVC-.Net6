@@ -108,6 +108,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29tbWVudExpc3RCeUJsb2dcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/Shared/Components/WriterAboutOnDashboard/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV3JpdGVyQWJvdXRPbkRhc2hib2FyZFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/Shared/Components/WriterLastBlog/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV3JpdGVyTGFzdEJsb2dcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -154,6 +158,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/Writer/Test.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdGVyXFRlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/Writer/WriterEditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdGVyXFdyaXRlckVkaXRQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/Writer/WriterFooterPartial.cshtml]

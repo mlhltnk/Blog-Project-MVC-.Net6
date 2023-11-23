@@ -18,9 +18,36 @@ namespace BusinessLayer.Concrete
 			_writerdal = writerdal;
 		}
 
-		public void WriterAdd(Writer writer)
-		{			
-			_writerdal.Insert(writer);
-		}
+        public List<Writer> GetWriterById(int id)
+        {
+            return _writerdal.GetListAll(x => x.WriterID == id);
+        }
+
+        public void TAdd(Writer t)
+        {
+            _writerdal.Insert(t);
+        }
+
+        public void TDelete(Writer t)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Writer TGetById(int id)
+        {
+            return _writerdal.GetById(id);  //idye göre değer getirecek
+        }
+
+        public List<Writer> TGetlist()   //admin panelinde bütün yazarları listelemek için bunu kullancağım
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TUpdate(Writer t)
+        {
+            _writerdal.Update(t);
+        }
+
+        
 	}
 }

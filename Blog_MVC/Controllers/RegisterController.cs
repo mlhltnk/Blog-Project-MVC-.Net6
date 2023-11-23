@@ -27,7 +27,7 @@ namespace Blog_MVC.Controllers
 			{
 				p.WriterStatus = true;
 				p.WriterAbout = "Deneme Test";
-				wm.WriterAdd(p);
+				wm.TAdd(p);
 				return RedirectToAction("Index", "Blog");  //index actionu 'Blog'controller içinde
 			}
 			else

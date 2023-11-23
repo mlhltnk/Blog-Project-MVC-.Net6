@@ -39,7 +39,7 @@ namespace BusinessLayer.Concrete
 			return _blogdal.GetListWithCategory();
 		}
 
-        public List<Blog> GetBlogListByWriter(int id)    //SPESİFİK İMZASI VAR
+        public List<Blog> GetBlogListByWriter(int id)    //SPESİFİK İMZASI VAR, yazara göre blog getirme işlemi
         {
             return _blogdal.GetListAll(x => x.WriterId == id);  //writerid'si dışardan gelen id'ye eşit olanları listele
         }
