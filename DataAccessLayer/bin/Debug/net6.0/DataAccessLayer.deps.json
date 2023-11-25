@@ -492,6 +492,9 @@
         }
       },
       "EntityLayer/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.24"
+        },
         "runtime": {
           "EntityLayer.dll": {}
         }

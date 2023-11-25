@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Blog_MVC.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\WriterImageFile\\569773e8-e713-4fd8-9c63-220af8cc476e.jpg",
+      "PackagePath": "staticwebassets\\WriterImageFile\\569773e8-e713-4fd8-9c63-220af8cc476e.jpg"
+    },
+    {
       "Id": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

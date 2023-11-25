@@ -2514,7 +2514,8 @@
           "DataAccessLayer": "1.0.0",
           "EntityLayer": "1.0.0",
           "FluentValidation": "10.4.0",
-          "FluentValidation.AspNetCore": "10.4.0"
+          "FluentValidation.AspNetCore": "10.4.0",
+          "Microsoft.EntityFrameworkCore": "6.0.24"
         },
         "runtime": {
           "BusinessLayer.dll": {}
@@ -2531,6 +2532,9 @@
         }
       },
       "EntityLayer/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.24"
+        },
         "runtime": {
           "EntityLayer.dll": {}
         }

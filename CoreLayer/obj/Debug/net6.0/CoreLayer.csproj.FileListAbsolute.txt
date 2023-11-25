@@ -9,3 +9,6 @@ C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\CoreLayer\obj\Debug\net6.0\CoreLayer.dl
 C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\CoreLayer\obj\Debug\net6.0\refint\CoreLayer.dll
 C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\CoreLayer\obj\Debug\net6.0\CoreLayer.pdb
 C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\CoreLayer\obj\Debug\net6.0\ref\CoreLayer.dll
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\CoreLayer\bin\Debug\net6.0\CoreLayer.runtimeconfig.json
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\CoreLayer\obj\Debug\net6.0\CoreLayer.genruntimeconfig.cache
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\CoreLayer\obj\Debug\net6.0\CoreLayer.csproj.AssemblyReference.cache

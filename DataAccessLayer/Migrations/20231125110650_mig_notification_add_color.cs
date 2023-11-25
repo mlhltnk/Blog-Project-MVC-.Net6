@@ -4,23 +4,23 @@
 
 namespace DataAccessLayer.Migrations
 {
-    public partial class addblogscore : Migration
+    public partial class mig_notification_add_color : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<int>(
-                name: "BlogScore",
-                table: "Comments",
-                type: "int",
+            migrationBuilder.AddColumn<string>(
+                name: "NotificationColor",
+                table: "Notifications",
+                type: "nvarchar(max)",
                 nullable: false,
-                defaultValue: 0);
+                defaultValue: "");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "BlogScore",
-                table: "Comments");
+                name: "NotificationColor",
+                table: "Notifications");
         }
     }
 }

@@ -3786,7 +3786,8 @@
           "DataAccessLayer": "1.0.0",
           "EntityLayer": "1.0.0",
           "FluentValidation": "10.4.0",
-          "FluentValidation.AspNetCore": "10.4.0"
+          "FluentValidation.AspNetCore": "10.4.0",
+          "Microsoft.EntityFrameworkCore": "6.0.24"
         },
         "compile": {
           "bin/placeholder/BusinessLayer.dll": {}
@@ -3813,6 +3814,9 @@
       "EntityLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.24"
+        },
         "compile": {
           "bin/placeholder/EntityLayer.dll": {}
         },

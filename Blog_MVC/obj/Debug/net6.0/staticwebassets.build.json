@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "r9AG07+RdFHeA4cbEfTrqOwOJRrCf12E9HuFd86hwMQ=",
+  "Hash": "gnU9CFMzJPMfO/SmuqIBx4CjYqWqfwdj3tpsp/WW0Jg=",
   "Source": "Blog_MVC",
   "BasePath": "_content/Blog_MVC",
   "Mode": "Default",
@@ -5030,6 +5030,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\webwriter\\screenshot.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\WriterImageFile\\569773e8-e713-4fd8-9c63-220af8cc476e.jpg",
+      "SourceId": "Blog_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\wwwroot\\",
+      "BasePath": "_content/Blog_MVC",
+      "RelativePath": "WriterImageFile/569773e8-e713-4fd8-9c63-220af8cc476e.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\WriterImageFile\\569773e8-e713-4fd8-9c63-220af8cc476e.jpg"
     }
   ]
 }

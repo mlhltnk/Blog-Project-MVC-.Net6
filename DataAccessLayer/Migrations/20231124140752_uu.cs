@@ -1,18 +1,17 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace DataAccessLayer.Migrations
 {
-    public partial class mig4 : Migration
+    public partial class uu : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterColumn<DateTime>(
-                name: "BlogCreateDate",
-                table: "Blogs",
-                type: "datetime2",
+            migrationBuilder.AlterColumn<string>(
+                name: "WriterImage",
+                table: "Writers",
+                type: "nvarchar(max)",
                 nullable: true,
                 oldClrType: typeof(string),
                 oldType: "nvarchar(max)");
@@ -21,13 +20,13 @@ namespace DataAccessLayer.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
-                name: "BlogCreateDate",
-                table: "Blogs",
+                name: "WriterImage",
+                table: "Writers",
                 type: "nvarchar(max)",
                 nullable: false,
                 defaultValue: "",
-                oldClrType: typeof(DateTime),
-                oldType: "datetime2",
+                oldClrType: typeof(string),
+                oldType: "nvarchar(max)",
                 oldNullable: true);
         }
     }
