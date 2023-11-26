@@ -6,12 +6,13 @@ namespace Blog_MVC.ViewComponents.Writer
 {
     public class WriterMessageNotification:ViewComponent
     {
-		MessageManager mm = new MessageManager(new EfMessageRepository());
+		Message2Manager mm = new Message2Manager(new EfMessage2Repository());
+
+        //WriterDashboard sayfasında sağ üstteki mesaj bildirimleri kısmını getiriyor
 		public IViewComponentResult Invoke() //invoke=çağırma
         {
-            string p;
-            p = "cemal@gmail.com";  //burası ilerde session olacak
-            var values = mm.GetInboxListByWriter(p);
+            int id = 2;
+            var values = mm.GetInboxListByWriter(id);
             return View(values);
         }
 

@@ -15,6 +15,24 @@ namespace DataAccessLayer.Concrete
             optionsBuilder.UseSqlServer("Data Source=MELIH\\SQLEXPRESS;Initial Catalog=CoreBlogDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
         }
 
+
+        //*****bir tabloda 2 ilişki işleminin ilişkilendirilme işlemi******
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Message2>()
+                .HasOne(x=>x.WriteSender)
+                .WithMany(y=>y.MessageSender)
+                .HasForeignKey(z=>z.SenderID)
+                .OnDelete(DeleteBehavior.ClientSetNull);
+
+            modelBuilder.Entity<Message2>()
+                .HasOne(x=>x.WriteReceiver)
+                .WithMany(y=>y.MessageReceiver)
+                .HasForeignKey(z=>z.ReceiverID)
+                .OnDelete(DeleteBehavior.ClientSetNull);
+        }
+        //****************************************************************
+
         public DbSet<About> Abouts { get; set; }
 
         public DbSet<Blog> Blogs { get; set; }
@@ -31,6 +49,7 @@ namespace DataAccessLayer.Concrete
         public DbSet<BlogRayting> BlogRaytings { get; set; }
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<Message> messages { get; set; }
+        public DbSet<Message2> Messages2 { get; set; }
 
 
 

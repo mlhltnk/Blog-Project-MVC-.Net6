@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace EntityLayer.Concrete
@@ -24,5 +25,8 @@ namespace EntityLayer.Concrete
         public bool WriterStatus { get; set; }
 
 		public List<Blog> Blogs { get; set; }  //bir categorinin birden çok writer'ı olabilir
-	}
+
+        public virtual ICollection<Message2> MessageSender { get; set; }  //withmany
+        public virtual ICollection<Message2> MessageReceiver { get; set; }   
+    }
 }
