@@ -5,10 +5,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Blog_MVC.Controllers
 {
-	[Authorize]
-	public class AboutController : Controller
+    public class AboutController : Controller
 	{
 		AboutManager abm = new AboutManager(new EfAboutRepository());
+
+	
 		public IActionResult Index()
 		{
 			var values = abm.TGetlist();

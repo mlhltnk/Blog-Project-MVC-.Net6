@@ -1,53 +1,33 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+
+builder.Services.AddControllersWithViews();
+
 builder.Services.AddSession();
 
-builder.Services.AddControllersWithViews();    //default
 
-
-// Cookie Authentication
+// Çerez Tabanlý Kimlik Doðrulama
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-	.AddCookie(options =>
-	{
-		options.LoginPath = "/Login/Index";
-		options.AccessDeniedPath = "/Login/Index"; // Opsiyonel: Eriþim reddedildiðinde yönlendirilecek sayfa
-		options.ReturnUrlParameter = "returnUrl"; // Opsiyonel: Yönlendirme için kullanýlacak parametre adý
-	});
-
-
-
-
-/*
-var globalAuthorizationPolicy = new AuthorizationPolicyBuilder()
-	.RequireAuthenticatedUser()
-	.Build();
-
-builder.Services.AddAuthorization(options =>
-{
-	options.DefaultPolicy = globalAuthorizationPolicy;
-});
-*/
+    .AddCookie(options =>
+    {
+        options.Cookie.Name = "deneme";
+        options.LoginPath = "/Login/Index";         //cookie bulunamazsa buraya gider
+        options.AccessDeniedPath = "/Login/Index";  //yetkisiz kullanýcýlar buraya gider
+    });
 
 
 
 var app = builder.Build();
 
-app.UseSession();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())      
+// HTTP isteði pipeline'ýný yapýlandýr.
+if (!app.Environment.IsDevelopment())
 {
-	app.UseExceptionHandler("/Home/Error");
-	// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-	app.UseHsts();
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
 }
 
 app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1", "?code={0}");
@@ -59,13 +39,15 @@ app.UseStaticFiles();
 app.UseRouting();
 
 
+app.UseAuthentication();  
+
 app.UseAuthorization();
 
+app.UseSession();
 
-app.UseAuthentication();
 
 app.MapControllerRoute(
-	name: "default",
-	pattern: "{controller=Home}/{action=Index}/{id?}");
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

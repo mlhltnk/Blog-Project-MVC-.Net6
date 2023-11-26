@@ -1,6 +1,7 @@
 ﻿using Blog_MVC.Models;
 using BusinessLayer.Concrete;
 using BusinessLayer.ValidationRules;
+using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation.Results;
@@ -15,8 +16,15 @@ namespace Blog_MVC.Controllers
 	{
 		WriterManager wm = new WriterManager(new EfWriterRepository());
 
+		[Authorize]
 		public IActionResult Index()
 		{
+			//**login ile birlikte login olan kişinin verilerini taşıma işlemi
+			var usermail = User.Identity.Name;
+			ViewBag.v = usermail;
+			Context c = new Context();
+			var writername = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterName).FirstOrDefault();
+			ViewBag.v2 = writername;
 			return View();
 		}
 
@@ -54,7 +62,10 @@ namespace Blog_MVC.Controllers
 		[HttpGet]
 		public IActionResult WriterEditProfile()
 		{
-			var writervalues = wm.TGetById(1);   //1 numaralı değere göre id getir
+			Context c = new Context();
+            var usermail = User.Identity.Name;
+            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
+            var writervalues = wm.TGetById(writerID);   //logine göre id getirme işlemi
 			return View(writervalues);
 		}
 

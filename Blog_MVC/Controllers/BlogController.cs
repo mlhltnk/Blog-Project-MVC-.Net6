@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Concrete;
 using BusinessLayer.ValidationRules;
+using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation.Results;
@@ -34,7 +35,10 @@ namespace Blog_MVC.Controllers
 
         public IActionResult BlogListByWriter()   //yazara göre blog listesi getir
         {
-            var values= bm.GetListWithCategoryByWriterBlogManager(1);
+            Context c = new Context();
+            var usermail = User.Identity.Name;
+            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
+            var values= bm.GetListWithCategoryByWriterBlogManager(writerID);  //login olanın idsine göre verisini getirme
             return View(values);
         }
 
@@ -60,14 +64,19 @@ namespace Blog_MVC.Controllers
         [HttpPost]
         public IActionResult BlogAdd(Blog p)
         {
+            //***login olanın verisini getirme işlemi
+            Context c = new Context();
+            var usermail = User.Identity.Name;
+            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
+            //***
+
             BlogValidator bv = new BlogValidator();    //validatörü burada newledik kullanmak için
             ValidationResult results = bv.Validate(p);     //pdan gelen değerleri validate et
-
             if (results.IsValid)  //işlem geçerliyse
             {
                 p.BlogStatus = true;
                 p.BlogCreateDate = DateTime.Parse(DateTime.Now.ToShortDateString());
-                p.WriterId = 1;
+                p.WriterId = writerID;
                 bm.TAdd(p);
                 return RedirectToAction("BlogListByWriter", "Blog");  //BlogListByWriter actionu 'Blog'controller içinde
             }
@@ -113,7 +122,12 @@ namespace Blog_MVC.Controllers
         [HttpPost]
         public IActionResult EditBlog(Blog p)
         {
-            p.WriterId = 1;
+            //***login olanın verisini getirme işlemi
+            Context c = new Context();
+            var usermail = User.Identity.Name;
+            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
+            //***
+            p.WriterId = writerID;
             p.BlogCreateDate = DateTime.Parse(DateTime.Now.ToShortDateString());
             p.BlogStatus = true;
             bm.TUpdate(p);

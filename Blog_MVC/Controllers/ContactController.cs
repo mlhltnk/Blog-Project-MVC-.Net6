@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Blog_MVC.Controllers
 {
-	
+	[Authorize]
 	public class ContactController : Controller
 	{
 		ContactManager cm = new ContactManager(new EfContactRepository());
