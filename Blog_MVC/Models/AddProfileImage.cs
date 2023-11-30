@@ -1,6 +1,6 @@
 ﻿namespace Blog_MVC.Models
 {
-    public class AddProfileImage   //ekleme işlemini bura üzerinden gerçekleştireceğim
+    public class AddProfileImage   //resim (upload)ekleme işlemini bura üzerinden gerçekleştireceğim
     {
         //WRİTERIMAGE PROPERTYSİNİN TÜRÜNÜ DEĞİŞECEĞİZ BU İŞLEMİ writer.cs İÇİNDE YAPMAK İSTEMEDİĞİM İÇİN
         //BU İŞLEMİ MODEL İÇERİSİNE OLUŞTURDUĞUM BU CLASS ÜZERİNDEN YAPACAĞIM
