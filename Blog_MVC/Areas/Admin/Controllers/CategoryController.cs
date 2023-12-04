@@ -5,7 +5,6 @@ using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
-
 using X.PagedList;
 
 namespace Blog_MVC.Areas.Admin.Controllers
@@ -47,8 +46,15 @@ namespace Blog_MVC.Areas.Admin.Controllers
                 {
                     ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
                 }
-                return View(p);
+                return View();
             }
+        }
+
+        public IActionResult CategoryDelete(int id)  //silme işleminde Onclick kullandık ve Ekstra bir sayfa oluşturmadık
+        {
+            var value = cm.TGetById(id);
+            cm.TDelete(value);
+            return RedirectToAction("Index");
         }
     }
 }

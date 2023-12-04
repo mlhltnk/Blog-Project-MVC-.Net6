@@ -48,13 +48,13 @@ app.UseSession();
 
 app.UseEndpoints(endpoints =>
 {
-    endpoints.MapAreaControllerRoute(
+    endpoints.MapAreaControllerRoute(                                     //AREAS ROUTE tanýmý
         name: "Admin",
         areaName: "Admin",
         pattern: "Admin/{controller=Category}/{action=Index}/{id?}"
     );
 
-    endpoints.MapControllerRoute(
+    endpoints.MapControllerRoute(                                        //AREAS ROUTE tanýmý
         name: "area",
         pattern: "{area:exists}/{controller}/{action}/{id?}"
     );
@@ -66,11 +66,5 @@ app.UseEndpoints(endpoints =>
 });
 
 
-
-
-
-//app.MapControllerRoute(
-//name: "default",
-//pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
