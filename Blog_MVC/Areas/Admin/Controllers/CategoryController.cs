@@ -50,7 +50,7 @@ namespace Blog_MVC.Areas.Admin.Controllers
             }
         }
 
-        public IActionResult CategoryDelete(int id)  //silme işleminde Onclick kullandık ve Ekstra bir sayfa oluşturmadık
+        public IActionResult CategoryDelete(int id)  //silme işleminde ONCLİCK kullandık ve Ekstra bir sayfa oluşturmadık
         {
             var value = cm.TGetById(id);
             cm.TDelete(value);

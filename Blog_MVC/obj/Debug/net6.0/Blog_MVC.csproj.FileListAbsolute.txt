@@ -264,3 +264,7 @@ C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\Microsoft.Asp
 C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\ClosedXML.dll
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\ExcelNumberFormat.dll
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\System.IO.Packaging.dll
