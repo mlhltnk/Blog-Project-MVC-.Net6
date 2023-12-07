@@ -19,7 +19,7 @@ namespace DataAccessLayer.EntityFramework
             {
                 return c.Messages2.Include(x => x.WriteSender).Where(x => x.ReceiverID == id).ToList();
                 //hangi entity include edilecek(dahil edilecek)se o yazılır-->kategori tablosuna ait değerleri bize getirecek ancak girdiğimiz id değeri writerid ye eşit olanları getirecek
-                //Include metodu kullanılarak Message2 tablosundaki veriler ve WriteReceiver adındaki property sayesinde ilişkili olan writer tablosuna ait veriler de çekilir.Bu sayede her bir mesajın writer bilgilerine erişim sağlanabilir.
+                //Include metodu kullanılarak Message2 tablosundaki veriler ve WriteSender adındaki property sayesinde ilişkili olan writer tablosuna ait veriler de çekilir.Bu sayede her bir mesajın writer bilgilerine erişim sağlanabilir.
                 //Where metodu ile sadece girilen yazarın mesajları filtrelenir.
             }
 
