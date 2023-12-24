@@ -21,12 +21,40 @@ namespace Blog_MVC.Areas.Admin.Controllers
         }
 
 
+        [HttpPost]
+        public IActionResult AddWriter(WriterClass w)    //Ajax ile yazar ekleme işlemi
+        {
+            writers.Add(w);
+            var Jsonwriters = JsonConvert.SerializeObject(w);
+            return Json(Jsonwriters);
+        }
 
-        public IActionResult WriterList()        //yazar listesini getirir      //Aşağıdaki listeyi bir değişkene atayıp bunu json türüne convert etmem gerekiyor
+		[HttpPost]
+		public IActionResult DeleteWriter(int id)       //Ajax ile yazar silme işlemi
+		{
+            var writer = writers.FirstOrDefault(w => w.Id == id);
+            writers.Remove(writer);
+            return Json(writer);
+        }
+
+
+        public IActionResult UpdateWriter(WriterClass w)   //Ajax ile yazar güncelleme işlemi
+		{
+            var writer = writers.FirstOrDefault(x => x.Id == w.Id);
+            writer.Name= w.Name;
+            var jsonWriter= JsonConvert.SerializeObject(writer);
+            return Json(jsonWriter);
+        }
+
+
+        public IActionResult WriterList()        //yazar listesini getirir   //Aşağıdaki listeyi bir değişkene atayıp bunu json türüne convert etmem gerekiyor
         {
             var jsonWriters = JsonConvert.SerializeObject(writers);
             return Json(jsonWriters);
+
         }
+
+
 
 
         public static List<WriterClass> writers = new List<WriterClass>
