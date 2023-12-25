@@ -1,0 +1,15 @@
+﻿@using Blog_MVC.Controllers
+@model List<Class1>
+
+@{
+    ViewData["Title"] = "Çalışan Ekle";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+@using (Html.BeginForm("AddEmployee", "EmployeeTest", FormMethod.Post))
+{
+    <label>Çalışan Adı Soyadı</label>
+    <input type="text" name="Name" id="Name" class="form-control" />
+    <br />
+    <button type="submit" class="btn btn-info">Çalışan Ekle</button>
+}

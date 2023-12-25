@@ -1,0 +1,28 @@
+﻿@using Blog_MVC.Controllers
+@model List<Class1>
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<table class=" table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Adı Soyadı</th>
+        <th>Sil</th>
+        <th>Düzenle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Name</td>
+            <td><a href="#" class="btn btn-outline-danger">Sİl</a></td>
+            <td><a href="#" class="btn btn-outline-success">Düzenle</a></td>
+        </tr>
+    }
+</table>
+
+<td><a href="/EmployeeTest/AddEmpyloyee" class="btn btn-outline-primary">Yeni Çalışan girişi</a></td>

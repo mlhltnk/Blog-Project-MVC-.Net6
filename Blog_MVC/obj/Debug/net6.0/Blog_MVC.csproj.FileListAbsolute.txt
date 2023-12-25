@@ -268,3 +268,12 @@ C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\ClosedXML.dll
 C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
 C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\ExcelNumberFormat.dll
 C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\System.IO.Packaging.dll
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\BlogApiDemo.deps.json
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\BlogApiDemo.runtimeconfig.json
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\BlogApiDemo.exe
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\BlogApiDemo.dll
+C:\Users\Melih\Desktop\Blog_MVC\Blog_MVC\Blog_MVC\bin\Debug\net6.0\BlogApiDemo.pdb

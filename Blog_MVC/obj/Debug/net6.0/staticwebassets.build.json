@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "REwIhBctIGfJ/B9Bb5tbXL0HtbVq/5q1TJMte4rIn/s=",
+  "Hash": "z14yXx1pi/5xIOR49v373+yH7BlAmueFQGci4FpdBoQ=",
   "Source": "Blog_MVC",
   "BasePath": "_content/Blog_MVC",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj",
+      "Version": 2,
+      "Source": "BlogApiDemo",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "Blog_MVC\\wwwroot",

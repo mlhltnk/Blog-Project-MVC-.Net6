@@ -20,6 +20,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.MapControllers();                         //CONTROLLERDAKÝ ROUTE ÝÞLEMÝNÝN ÇALIÞMASI ÝÇÝN BUNU EKLEMEN LAZIM
+
 var summaries = new[]
 {
 	"Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
