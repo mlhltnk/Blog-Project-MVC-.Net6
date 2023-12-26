@@ -112,8 +112,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/EmployeeTest/AddEmplooye.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVUZXN0XEFkZEVtcGxvb3llLmNzaHRtbA==
+[C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/EmployeeTest/AddEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVUZXN0XEFkZEVtcGxveWVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/EmployeeTest/EditEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVUZXN0XEVkaXRFbXBsb3llZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/EmployeeTest/Index.cshtml]
@@ -150,6 +154,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/Notification/AllNotification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uXEFsbE5vdGlmaWNhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/RegisterUser/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJVc2VyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Melih/Desktop/Blog_MVC/Blog_MVC/Blog_MVC/Views/Register/Index.cshtml]

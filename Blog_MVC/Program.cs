@@ -1,3 +1,5 @@
+using DataAccessLayer.Concrete;
+using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
 
@@ -9,6 +11,9 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddSession();
 
+builder.Services.AddDbContext<Context>();                                                //ÝDENTÝTY KÜTÜPHANESÝ ÝÇÝN EKLENDÝ
+
+builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();    //ÝDENTÝTY KÜTÜPHANESÝ ÝÇÝN EKLENDÝ
 
 // Çerez Tabanlý Kimlik Doðrulama
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
