@@ -10,12 +10,12 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Blog_MVC.Controllers
 {
-    [AllowAnonymous]
+    [Authorize]
     public class BlogController : Controller
     {
         BlogManager bm = new BlogManager(new EfBlogRepository());
 
-
+        [AllowAnonymous]
         public IActionResult Index()
         {
             var values = bm.GetBlogListWithCategory();
@@ -23,7 +23,7 @@ namespace Blog_MVC.Controllers
         }
 
 
-
+        [AllowAnonymous]
         public IActionResult BlogReadAll(int id)
         {
             ViewBag.i = id;
@@ -38,7 +38,7 @@ namespace Blog_MVC.Controllers
             Context c = new Context();
             var usermail = User.Identity.Name;
             var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
-            var values= bm.GetListWithCategoryByWriterBlogManager(writerID);  //login olanın idsine göre verisini getirme
+            var values= bm.GetListWithCategoryByWriterBlogManager(writerID);                                        //login olanın idsine göre verisini getirme
             return View(values);
         }
 

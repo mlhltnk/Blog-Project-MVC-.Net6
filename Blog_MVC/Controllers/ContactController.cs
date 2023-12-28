@@ -6,7 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Blog_MVC.Controllers
 {
-	[Authorize]
+	//[AllowAnonymous] ve hiç bişey yazmazsa hiçbir etkisi olmuyor
+	//[Authorize] yazarsa hata dönüyor
 	public class ContactController : Controller
 	{
 		ContactManager cm = new ContactManager(new EfContactRepository());

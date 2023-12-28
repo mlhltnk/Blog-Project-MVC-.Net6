@@ -6,24 +6,38 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 var builder = WebApplication.CreateBuilder(args);
 
 
-
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddSession();
 
-builder.Services.AddDbContext<Context>();                                                //ÝDENTÝTY KÜTÜPHANESÝ ÝÇÝN EKLENDÝ
 
-builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();    //ÝDENTÝTY KÜTÜPHANESÝ ÝÇÝN EKLENDÝ
 
-// Çerez Tabanlý Kimlik Doðrulama
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+
+builder.Services.AddDbContext<Context>();                   //ÝDENTÝTY KÜTÜPHANESÝ ÝÇÝN EKLENDÝ
+
+
+
+builder.Services.AddIdentity<AppUser, AppRole>(x=>
+{
+    x.Password.RequireUppercase = false;                    //ÝDENTÝTYDE ÝSTEMEDÝÐÝMÝZ KURALLARI FALSE YAPMAK
+    x.Password.RequireNonAlphanumeric = false;              //ÝDENTÝTYDE ÝSTEMEDÝÐÝMÝZ KURALLARI FALSE YAPMAK
+})
+    .AddEntityFrameworkStores<Context>();    
+
+
+
+
+
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)    // Çerez Tabanlý Kimlik Doðrulama
     .AddCookie(options =>
     {
         options.Cookie.Name = "deneme";
-        options.LoginPath = "/Login/Index";         //cookie bulunamazsa buraya gider
-        options.AccessDeniedPath = "/Login/Index";  //yetkisiz kullanýcýlar buraya gider
+        options.LoginPath = "/Login/index";                                             //cookie bulunamazsa buraya gider
+        options.AccessDeniedPath = "login/index";                                         //yetkisiz kullanýcýlar buraya gider
     });
 
+
+builder.Services.AddSession();
 
 
 var app = builder.Build();
@@ -39,16 +53,16 @@ app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1", "?code={0}");
 
 app.UseHttpsRedirection();
 
-app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseSession();
+
+app.UseStaticFiles();
 
 app.UseAuthentication();  
 
 app.UseAuthorization();
-
-app.UseSession();
 
 
 app.UseEndpoints(endpoints =>

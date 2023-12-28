@@ -3,9 +3,11 @@ using BusinessLayer.Concrete;
 using BusinessLayer.ValidationRules;
 using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
+using DocumentFormat.OpenXml.Drawing.Charts;
 using EntityLayer.Concrete;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using NuGet.Protocol;
 
@@ -16,17 +18,29 @@ namespace Blog_MVC.Controllers
 	{
 		WriterManager wm = new WriterManager(new EfWriterRepository());
 
-		[Authorize]
+
+		private readonly UserManager<AppUser> _userManager;   //writer tablosu yerine Appuser ani identity tablosunu kulllanacağım
+
+        public WriterController(UserManager<AppUser> userManager)
+        {
+            _userManager = userManager;
+        }
+
+        [Authorize]
 		public IActionResult Index()
-		{
-			//**login ile birlikte login olan kişinin verilerini taşıma işlemi
-			var usermail = User.Identity.Name;
-			ViewBag.v = usermail;
-			Context c = new Context();
-			var writername = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterName).FirstOrDefault();
+		{        
+														//login ile birlikte login olan kişinin verilerini taşıma işlemi
+            var usermail = User.Identity.Name;          //User.Identity;login olan kullanıcıyla ilgili kimlik bilgilerini temsil eden bir nesneyi ifade eder. Identity yapısından gelmektedir
+            ViewBag.v = usermail;
+
+            Context c = new Context();
+            var writername = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterName).FirstOrDefault();
 			ViewBag.v2 = writername;
 			return View();
 		}
+
+
+
 
 		public IActionResult WriterProfile()
 		{
@@ -59,15 +73,31 @@ namespace Blog_MVC.Controllers
 
 
 
+
+
 		[HttpGet]
 		public IActionResult WriterEditProfile()
 		{
+			//BURADA WRİTER YERİNE APPUSER TABLOSU KULLANILARAK VERİLER GETİRİLDİ(Yorum satırları writer zamanındaki haliydi.)
+
 			Context c = new Context();
-            var usermail = User.Identity.Name;
-            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
-            var writervalues = wm.TGetById(writerID);   //logine göre id getirme işlemi
-			return View(writervalues);
+			var username = User.Identity.Name;
+			var usermail = c.Users.Where(x=>x.UserName==username).Select(y=>y.Email).FirstOrDefault();  //kullanıcı adını kullanarak mail adresini çektim  //Users tablosunda UserName özelliği username ile eşleşen bir kullanıcının e-posta adresini bulur
+			
+			UserManager userManager = new UserManager(new EfUserRepository());
+			
+			//var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
+			//var writervalues = wm.TGetById(writerID);   //logine göre id getirme işlemi
+			//return View(writervalues);
+			//var username = await _userManager.FindByEmailAsync(User.Identity.Name);  //sisteme authentice olan kullanıcnın adına göre ara
+			
+			var id = c.Users.Where(x=>x.Email == usermail).Select(y=>y.Id).FirstOrDefault();
+			var values = userManager.TGetById(id);
+			return View(values);
 		}
+
+
+
 
 
 

@@ -10,7 +10,7 @@ namespace EntityLayer.Concrete
     public class AppUser:IdentityUser<int>  //key değeri int olsun
     {
         public string NameSurname { get; set; }
-        public string ImageUrl { get; set; }
+        public string? ImageUrl { get; set; }
         
     }
 }

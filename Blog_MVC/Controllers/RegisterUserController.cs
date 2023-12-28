@@ -12,7 +12,7 @@ namespace Blog_MVC.Controllers
     [AllowAnonymous]
     public class RegisterUserController : Controller
     {
-        private readonly UserManager<AppUser> _userManager;
+        private readonly UserManager<AppUser> _userManager;   //UserManager  sisteme kayıt olmak için construtor olarak eklenmeli(identityden geliyor)
 
 
         public RegisterUserController(UserManager<AppUser> userManager)
@@ -37,7 +37,7 @@ namespace Blog_MVC.Controllers
             {
                 AppUser user = new AppUser()
                 {
-                    Email = p.Mail,   //Email, Username , NameSurname bunlar identity kütüphanesinde aspnetuser tablosundan geliyor
+                    Email = p.Mail,   //Email, Username , NameSurname bunlar identity kütüphanesinde aspnetuser tablosundan geliyor.//p.Email vs. usersignupmodel tanımımızdan geliyor.
                     UserName = p.UserName,
                     NameSurname = p.nameSurname
                     //şifre metot çağırılırken giriliyor burada girilmiyor
