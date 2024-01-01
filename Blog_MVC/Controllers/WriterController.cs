@@ -76,50 +76,69 @@ namespace Blog_MVC.Controllers
 
 
 		[HttpGet]
-		public IActionResult WriterEditProfile()
+		public async Task<IActionResult> WriterEditProfile()
 		{
-			//BURADA WRİTER YERİNE APPUSER TABLOSU KULLANILARAK VERİLER GETİRİLDİ(Yorum satırları writer zamanındaki haliydi.)
+			// 1. YÖNTEM----->VERİLER WRİTER YERİNE APPUSER TABLOSU KULLANILARAK VERİLER GETİRİLDİ ANCAK "FİNDBYNAMEASYNC METODU" KULLANILDI!*******************
+
+			var values = await _userManager.FindByNameAsync(User.Identity.Name);    //asenkron bir şekilde (await) kullanıcıyı adıyla bulma işlemidir. FindByNameAsync kullanma sebebim sistemde kullanıcı adıma göre işlem gerçekleştireceğim)
+																					//User.Identity.Name ifadesi, sisteme giriş yapacak kullanıcı adını temsil eder
+			UserUpdateViewModel model = new UserUpdateViewModel();
+
+			model.mail = values.Email;
+			model.namesurname = values.NameSurname;
+			model.imageurl = values.ImageUrl;
+            model.username= values.UserName;
+
+
+            /*2. YÖNTEM----->VERİLER WRİTER YERİNE APPUSER TABLOSU KULLANILARAK VERİLER GETİRİLDİ*******************
 
 			Context c = new Context();
-			var username = User.Identity.Name;
-			var usermail = c.Users.Where(x=>x.UserName==username).Select(y=>y.Email).FirstOrDefault();  //kullanıcı adını kullanarak mail adresini çektim  //Users tablosunda UserName özelliği username ile eşleşen bir kullanıcının e-posta adresini bulur
-			
+			var username = User.Identity.Name;  //login olan kullanıcıyla ilgili kimlik bilgilerinden adını getirir.
+            var usermail = c.Users.Where(x=>x.UserName==username).Select(y=>y.Email).FirstOrDefault();  //kullanıcı adını kullanarak mail adresini çektim  
+ 																									   //Users tablosunda UserName', sessiondan gelen username ile eşleşen bir kullanıcının e-posta adresini bulur			
 			UserManager userManager = new UserManager(new EfUserRepository());
-			
-			//var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
-			//var writervalues = wm.TGetById(writerID);   //logine göre id getirme işlemi
-			//return View(writervalues);
-			//var username = await _userManager.FindByEmailAsync(User.Identity.Name);  //sisteme authentice olan kullanıcnın adına göre ara
-			
-			var id = c.Users.Where(x=>x.Email == usermail).Select(y=>y.Id).FirstOrDefault();
-			var values = userManager.TGetById(id);
-			return View(values);
+            var id = c.Users.Where(x => x.Email == usermail).Select(y => y.Id).FirstOrDefault();  //Users tablosunda Email'i, sessiondan gelen email ile eşleşen kullanıcının ID'sini bulur
+            var values = userManager.TGetById(id); //Bulunan İD'ye göre listeleme yapar*****************************/
+
+
+
+            /***************** VERİLERİ WRİTER'DAN ÇEKERKEN KULLANILAN KODLAR*******************
+            Context c = new Context();
+            var usermail = User.Identity.Name;
+			var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
+			var writervalues = wm.TGetById(writerID);									//logine göre id getirme işlemi
+			return View(writervalues);
+			***********************************************************************************/
+
+            return View(model);
 		}
 
 
 
 
 
-
         [HttpPost]
-        public IActionResult WriterEditProfile(Writer p)
+        public async Task<IActionResult> WriterEditProfile(UserUpdateViewModel model)
         {
-            WriterValidator wl = new WriterValidator();
-			ValidationResult result = wl.Validate(p);
-			if(result.IsValid)
-			{
-				wm.TUpdate(p);
-				return RedirectToAction("Index","Dashboard");
-			}
-			else
-			{
-				foreach (var item in result.Errors)
-				{
-					ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
-				}
-			}
-			return View();
+
+            //********VERİLER WRİTER YERİNE APPUSER TABLOSU KULLANILARAK VERİLER GETİRİLDİ ANCAK "FİNDBYNAMEASYNC VE UPDATEASYNC METODLARI" KULLANILDI!******
+            var values = await _userManager.FindByNameAsync(User.Identity.Name);	//kullanıcı adına göre bilgilerini çeker
+			values.Email = model.mail;												//modelden(kullanıcıdan) gelen güncellenmiş mail bilgisini, kullanıcının mevcut emailine(valuese) ile günceller.
+            values.NameSurname = model.namesurname;
+			values.ImageUrl = model.imageurl;
+
+			var result = await _userManager.UpdateAsync(values);   //kullanıcının güncellenmiş bilgilerini veritabanında kaydeder.
+
+
+            //***************** VERİLERİ WRİTER'DAN ÇEKERKEN KULLANILAN KODLAR*****************
+            //WriterValidator wl = new WriterValidator();
+            //ValidationResult result = wl.Validate(p);
+            //wm.TUpdate(p);
+
+
+            return RedirectToAction("Index","Dashboard");			
         }
+
 
 
 

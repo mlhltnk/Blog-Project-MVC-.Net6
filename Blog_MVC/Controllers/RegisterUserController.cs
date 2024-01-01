@@ -37,8 +37,8 @@ namespace Blog_MVC.Controllers
             {
                 AppUser user = new AppUser()
                 {
-                    Email = p.Mail,   //Email, Username , NameSurname bunlar identity kütüphanesinde aspnetuser tablosundan geliyor.//p.Email vs. usersignupmodel tanımımızdan geliyor.
-                    UserName = p.UserName,
+                    Email = p.Mail,               //Email, Username , NameSurname bunlar identity kütüphanesinin aspnetuser tablosundan geliyor.//p.Email vs. usersignupmodel tanımımızdan geliyor.
+                    UserName = p.UserName,         //Kullanıcınını giriş yaptığı p.username ifadesi veritabanındaki appuser içindeki username'e atanır
                     NameSurname = p.nameSurname
                     //şifre metot çağırılırken giriliyor burada girilmiyor
                 };   

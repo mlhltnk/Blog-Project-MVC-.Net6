@@ -30,7 +30,7 @@ namespace BusinessLayer.Concrete
 
         public AppUser TGetById(int id)
         {
-            return _userDal.GetById(id);   //idye göre userdalın verileri getirecek
+            return _userDal.GetById(id);   //idye göre userdalın verileri getirecek  (bunun yerine findbynameasync kullandık bunu 2. yöntem olarak yazdım)
         }
 
         public List<AppUser> TGetlist()
@@ -40,7 +40,7 @@ namespace BusinessLayer.Concrete
 
         public void TUpdate(AppUser t)
         {
-            throw new NotImplementedException();
+            _userDal.Update(t);   //güncelleme işlemi (bunun yerine updateasync kullandık bunu 2. yöntem olarak yazdım)
         }
     }
 }
