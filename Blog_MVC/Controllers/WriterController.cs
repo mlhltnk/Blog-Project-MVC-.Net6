@@ -127,7 +127,9 @@ namespace Blog_MVC.Controllers
             values.NameSurname = model.namesurname;
 			values.ImageUrl = model.imageurl;
 
-			var result = await _userManager.UpdateAsync(values);   //kullanıcının güncellenmiş bilgilerini veritabanında kaydeder.
+			values.PasswordHash = _userManager.PasswordHasher.HashPassword(values, model.password);  //kullanıcının girdiği şifreyi hashleyen ve  bu hash değerini kullanıcın PasswordHash değerine atar. 
+
+            var result = await _userManager.UpdateAsync(values);   //kullanıcının güncellenmiş bilgilerini veritabanında kaydeder.
 
 
             //***************** VERİLERİ WRİTER'DAN ÇEKERKEN KULLANILAN KODLAR*****************
@@ -142,11 +144,13 @@ namespace Blog_MVC.Controllers
 
 
 
+
 		[HttpGet]
 		public IActionResult WriterAdd()
 		{ 
 			return View();
 		}
+
 
 
 
