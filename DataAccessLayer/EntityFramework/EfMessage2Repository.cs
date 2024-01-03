@@ -11,9 +11,11 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-    public class EfMessage2Repository :GenericRepository<Message2>, IMessage2Dal
+    public class EfMessage2Repository : GenericRepository<Message2>, IMessage2Dal
     {
-        public List<Message2> GetListWithMessageByWriter(int id)
+
+
+        public List<Message2> GetInboxWithMessageByWriter(int id)
         {
             using (var c = new Context())
             {
@@ -25,5 +27,14 @@ namespace DataAccessLayer.EntityFramework
 
 
         }
+
+        public List<Message2> GetSenboxWithMessageByWriter(int id)
+        {
+            using (var c = new Context())
+            {
+                return c.Messages2.Include(x => x.WriteReceiver).Where(x => x.SenderID == id).ToList();
+            }
+        }
     }
 }
+

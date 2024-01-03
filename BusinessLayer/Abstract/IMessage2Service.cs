@@ -10,5 +10,6 @@ namespace BusinessLayer.Abstract
     public interface IMessage2Service:IGenericService<Message2>
     {
         List<Message2> GetInboxListByWriter(int id);   //yazara göre sadece gelen mesajları getir. mailden gelen p parametresi ile
+        List<Message2> GetSenboxListByWriter(int id);   
     }
 }

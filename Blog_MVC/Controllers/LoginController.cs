@@ -31,7 +31,7 @@ namespace Blog_MVC.Controllers
 
 
         [HttpPost]
-        public async  Task<IActionResult> Index(UserSingInViewModel p)
+        public async  Task<IActionResult> Index(UserSingInViewModel p)       //login işlemi
         {
             if (ModelState.IsValid)                             //ModelState geçerliyse yani ViewModelde belirttiğimiz validasyonlara uyuyorsa
             {
@@ -54,6 +54,11 @@ namespace Blog_MVC.Controllers
         }
 
 
+        public async Task<IActionResult> LogOut()          
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Login");
+        }
 
 
     }

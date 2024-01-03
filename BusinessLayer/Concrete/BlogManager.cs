@@ -46,8 +46,8 @@ namespace BusinessLayer.Concrete
 
 		public List<Blog> GetListWithCategoryByWriterBlogManager(int id)   /*İMZASI YOK DİREK BURADA OLUŞTURDUK*/
 		{
-			return _blogdal.GetListWithCategoryByWriter(id);
-		}
+			return _blogdal.GetListWithCategoryByWriter(id);   //GetListWithCategoryByWriter include metodu içeriyor
+        }
 
 
 

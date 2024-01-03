@@ -122,12 +122,13 @@ namespace Blog_MVC.Controllers
         {
 
             //********VERİLER WRİTER YERİNE APPUSER TABLOSU KULLANILARAK VERİLER GETİRİLDİ ANCAK "FİNDBYNAMEASYNC VE UPDATEASYNC METODLARI" KULLANILDI!******
+
             var values = await _userManager.FindByNameAsync(User.Identity.Name);	//kullanıcı adına göre bilgilerini çeker
 			values.Email = model.mail;												//modelden(kullanıcıdan) gelen güncellenmiş mail bilgisini, kullanıcının mevcut emailine(valuese) ile günceller.
             values.NameSurname = model.namesurname;
 			values.ImageUrl = model.imageurl;
 
-			values.PasswordHash = _userManager.PasswordHasher.HashPassword(values, model.password);  //kullanıcının girdiği şifreyi hashleyen ve  bu hash değerini kullanıcın PasswordHash değerine atar. 
+			values.PasswordHash = _userManager.PasswordHasher.HashPassword(values, model.password);		//kullanıcının girdiği şifreyi hashleyen ve  bu hash değerini kullanıcın PasswordHash değerine atar. 
 
             var result = await _userManager.UpdateAsync(values);   //kullanıcının güncellenmiş bilgilerini veritabanında kaydeder.
 
@@ -143,7 +144,7 @@ namespace Blog_MVC.Controllers
 
 
 
-
+		
 
 		[HttpGet]
 		public IActionResult WriterAdd()

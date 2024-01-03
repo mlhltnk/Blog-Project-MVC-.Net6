@@ -1,7 +1,8 @@
 using DataAccessLayer.Concrete;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Authentication.Cookies;
-
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 
+
+builder.Services.AddMvc(config=>         //ÝDENTÝTYDEN SONRA YAZDIM***
+{
+    var policy =new AuthorizationPolicyBuilder()
+    .RequireAuthenticatedUser()
+    .Build();
+    config.Filters.Add(new AuthorizeFilter(policy));
+});
 
 
 
@@ -35,6 +44,19 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.LoginPath = "/Login/index";                                             //cookie bulunamazsa buraya gider
         options.AccessDeniedPath = "login/index";                                         //yetkisiz kullanýcýlar buraya gider
     });
+
+
+
+builder.Services.ConfigureApplicationCookie(options =>              //ÝDENTÝTY ÝÞLEMÝNDEN SONRA YAZDIM.***
+{
+    options.Cookie.HttpOnly = true;
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(100);         //session süresi 100 dk
+    options.LoginPath = "/Login/Index/";
+    options.SlidingExpiration = true;
+
+});
+
+
 
 
 builder.Services.AddSession();

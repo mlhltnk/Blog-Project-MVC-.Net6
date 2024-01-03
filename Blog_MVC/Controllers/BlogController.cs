@@ -33,14 +33,27 @@ namespace Blog_MVC.Controllers
 
 
 
-        public IActionResult BlogListByWriter()   //yazara göre blog listesi getir
+
+        public IActionResult BlogListByWriter()   //yazara göre blog listesi getir  //writer tablosunu iptal edip appuser tablosunu kullandık
         {
             Context c = new Context();
-            var usermail = User.Identity.Name;
-            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
-            var values= bm.GetListWithCategoryByWriterBlogManager(writerID);                                        //login olanın idsine göre verisini getirme
+
+            var username = User.Identity.Name;
+
+
+            //Users; Appuser tablosunu ifade eder. 
+            var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();    //kullanıcı adını kullanarak mail adresini çektim  //Users tablosunda UserName özelliği username ile eşleşen bir kullanıcının e-posta adresini bulur
+
+            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();  //Writers tablosunda WriterMail özelliği usermail ile eşleşen bir yazarın WriterID değerini bulur.
+
+
+            var values= bm.GetListWithCategoryByWriterBlogManager(writerID);             //login olanın idsine göre verisini getirme   //GetListWithCategoryByWriterblogmanager'ın bir önceki katmanında include işlemi var
+
             return View(values);
         }
+
+
+
 
 
 
@@ -61,13 +74,20 @@ namespace Blog_MVC.Controllers
 
 
 
+
         [HttpPost]
         public IActionResult BlogAdd(Blog p)
         {
-            //***login olanın verisini getirme işlemi
+            //***login olanın verisini getirme işlemi  
             Context c = new Context();
-            var usermail = User.Identity.Name;
-            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
+            var username = User.Identity.Name;
+
+            //Users; Appuser tablosunu ifade eder. 
+            var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();    //kullanıcı adını kullanarak mail adresini çektim  //Users tablosunda UserName özelliği username ile eşleşen bir kullanıcının e-posta adresini bulur
+
+            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();  //Writers tablosunda WriterMail özelliği usermail ile eşleşen bir yazarın WriterID değerini bulur.
+
+            //Login olan username ile appuser tablosundan mail adresini bulduk. SOnra bu mail adresi ile writers tablosundan writerid'yi bulduk
             //***
 
             BlogValidator bv = new BlogValidator();    //validatörü burada newledik kullanmak için
@@ -124,8 +144,12 @@ namespace Blog_MVC.Controllers
         {
             //***login olanın verisini getirme işlemi
             Context c = new Context();
-            var usermail = User.Identity.Name;
-            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
+            var username = User.Identity.Name;
+
+            var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();    //kullanıcı adını kullanarak mail adresini çektim  //Users tablosunda UserName özelliği username ile eşleşen bir kullanıcının e-posta adresini bulur
+
+            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();  //Writers tablosunda WriterMail özelliği usermail ile eşleşen bir yazarın WriterID değerini bulur.
+         
             //***
             p.WriterId = writerID;
             p.BlogCreateDate = DateTime.Parse(DateTime.Now.ToShortDateString());
