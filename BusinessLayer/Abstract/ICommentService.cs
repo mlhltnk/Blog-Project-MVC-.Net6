@@ -18,6 +18,8 @@ namespace BusinessLayer.Abstract
 
 		List<Comment> Getlist(int id);
 
-		//Category GetById(int id);
-	}
+        //Category GetById(int id);
+
+        List<Comment> GetCommentListWithBlog();  //Blog->index sayfasında categoryleri getirme işlemi(blog listesini kategori ile getir)
+    }
 }

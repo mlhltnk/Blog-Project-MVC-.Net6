@@ -9,5 +9,7 @@ namespace DataAccessLayer.Abstract
 {
     public interface ICommentDal:IGenericDal<Comment>
     {
+        List<Comment> GetListWithBlog();   //Yorum blog adı ile beraber gelecek
+                                            //yorum sayfasındaki blogları getir
     }
 }

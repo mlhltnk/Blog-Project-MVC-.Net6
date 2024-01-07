@@ -21,16 +21,16 @@
                         <div class="ibox">
                             <div class="ibox-content product-box">
 
-                                <div class="product-imitation">
-                                    [ INFO ]
+                                <div>
+                                    <img src="@item.BlogImage" height="225" width="378" />
                                 </div>
+
                                 <div class="product-desc">
                                     <span class="product-price">
                                     @(((DateTime)item.BlogCreateDate).ToString("dd-MMM-yyyy"))
                                     </span>
                                     <small class="text-muted">@item.Category.CategoryName</small>
-                                    <a href="#" class="product-name"> @item.BlogTitle</a>
-
+                                    <a href="/Blog/BlogReadAll/@item.BlogID/" class="product-name"> @item.BlogTitle</a>
 
 
                                     <div class="small m-t-xs">
