@@ -55,14 +55,14 @@
                                     <tr>
                                         <th>@item.Id</th>
                                         <td>@item.Name</td>
-                                        <td><a href="#" class="btn btn-outline-danger">Sil</a></td>
-                                        <td><a href="#" class="btn btn-outline-success">Düzenle</a></td>
+                                        <td><a href="/Admin/AdminRole/DeleteRole/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+                                        <td><a href="/Admin/AdminRole/UpdateRole/@item.Id" class="btn btn-outline-success">Düzenle</a></td>
                                     </tr>
                                 }
 
                             </tbody>
                         </table>
-                        <a gref="/Admin/AdminROl/AdminRole/" class="btn btn-outline-primary">Yeni Rol Ekle</a>
+                        <a href="/Admin/AdminRole/AddRole/" class="btn btn-outline-primary">Yeni Rol Ekle</a>
                     </div>
                 </div>
             </div>
