@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\CoreLayer\\CoreLayer.csproj": {}
+    "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\CoreLayer\\CoreLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\CoreLayer\\CoreLayer.csproj": {
+    "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\CoreLayer\\CoreLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\CoreLayer\\CoreLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\CoreLayer\\CoreLayer.csproj",
         "projectName": "CoreLayer",
-        "projectPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\CoreLayer\\CoreLayer.csproj",
+        "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\CoreLayer\\CoreLayer.csproj",
         "packagesPath": "C:\\Users\\Melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\CoreLayer\\obj\\",
+        "outputPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\CoreLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Melih\\AppData\\Roaming\\NuGet\\NuGet.Config",

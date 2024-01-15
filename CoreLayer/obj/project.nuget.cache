@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DpwIufEyPyybswEdOgm+dqvYkg+Ruex/H4YFC/WXRYlEbRJI0pGDtZKF6GgRDwQ/kmjOILJCEb7LWjoty5QN4Q==",
+  "dgSpecHash": "dG48abZrkqeWO9YNACZ+Gk107byb9ut1OvrjnfcL2/nG5CHRR5IijzIS2wWH9BNr+Cu1cr3fL5hbwjYeMWfdaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\CoreLayer\\CoreLayer.csproj",
+  "projectFilePath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\CoreLayer\\CoreLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Melih\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Melih\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.24\\microsoft.entityframeworkcore.6.0.24.nupkg.sha512",

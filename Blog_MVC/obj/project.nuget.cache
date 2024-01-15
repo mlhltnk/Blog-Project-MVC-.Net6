@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1cUdB+Th7/9oiihA8RssU/yzTGG9bltfpAWzLdh8LHRrIOjFfKL2dtaddO3Hc3ivrIWrxINirD/tMv0bB8Om+g==",
+  "dgSpecHash": "rpXeZt26QBSuiIAl03c+l7i3zbO/LbGpMJcYTSe7jBJY6KUh619JvS8SKW/nHvEErQVocPP/9rkfVfFI2SKjmQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\Blog_MVC.csproj",
+  "projectFilePath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\Blog_MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Melih\\.nuget\\packages\\closedxml\\0.96.0\\closedxml.0.96.0.nupkg.sha512",
     "C:\\Users\\Melih\\.nuget\\packages\\documentformat.openxml\\2.16.0\\documentformat.openxml.2.16.0.nupkg.sha512",
@@ -152,6 +152,7 @@
     "C:\\Users\\Melih\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Melih\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Melih\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Melih\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512",
     "C:\\Users\\Melih\\.nuget\\packages\\microsoft.visualstudio.debugger.contracts\\17.2.0\\microsoft.visualstudio.debugger.contracts.17.2.0.nupkg.sha512",
     "C:\\Users\\Melih\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\6.0.16\\microsoft.visualstudio.web.codegeneration.6.0.16.nupkg.sha512",
     "C:\\Users\\Melih\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\6.0.16\\microsoft.visualstudio.web.codegeneration.core.6.0.16.nupkg.sha512",

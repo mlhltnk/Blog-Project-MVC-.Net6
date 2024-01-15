@@ -1,0 +1,151 @@
+﻿@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Yazar Ajax İşlemleri</h1>
+<br /> 
+<button type="button" id="btngetlist" class="btn btn-outline-primary">Yazar Listesi</button>    @*Buton tetiklenince tüm yazarları getir scripti çalışacak*@
+
+<button type="button" id="btngetbyid" class="btn btn-outline-success">Yazar Getir</button>      @*Buton tetiklenince idye göre yazar getir scripti çalışacak*@
+
+<button type="button" id="btnaddwriter" class="btn btn-outline-info">Yazar Ekle</button>      @*Buton tetiklenince ekleme scripti çalışacak*@
+
+<button type="button" id="btndeletewriter" class="btn btn-outline-danger">Yazar Sil</button>		@*Buton tetiklenince silme scripti çalışacak*@
+
+<button type="button" id="btnupdatewriter" class="btn btn-outline-warning">Yazar Güncelle</button>
+
+
+<div id="writerlist">
+	Buraya yazarlar gelecek
+</div>
+<br />
+
+<br />
+
+
+<div id="writerget">    
+	@*buranın içeriği en alttaki scriptten geliyor idye göre yazar getirme işlemi*@
+</div>
+
+<br />
+
+
+
+<div>
+	<input type="text" id="writerid" placeholder="Yazarın id değerini giriniz" class="form-control" />
+</div>
+<br />
+
+
+<div>
+	<input type="text" class="form-control" id="txtwriterid" placeholder="Yazar ID"/>
+	<input type="text" class="form-control" id="txtwritername" placeholder="Yazar Adı" />
+</div>
+
+
+<div>
+	<input type="text" class="form-control" id="txtid" placeholder="Silinecek Yazar ID" />
+</div>
+<br />
+
+
+<input type="text" id="txtid1" class="form-control" placeholder="Güncellenecek ID"/>
+<input type="text" id="txtwritername1" class="form-control" placeholder="Güncellenecek İsim"/>
+
+
+@section scripts{
+	<script>
+
+		@*Tüm Yazarları getirme(listeleme) işleminin scripti(tabloyu script üzerinden göndereceğiz)*@
+		$("#btngetlist").click(function () {
+			$.ajax({
+				contentType: "application/json",			//içeriğin türü
+				dataType: "json",							//veri türü
+				type: "Get",
+				url: "/Admin/Writer/WriterList/",
+				success: function (func) {
+					let w = jQuery.parseJSON(func);
+					console.log(w);
+					let tablehtml = "<div class='ibox-title'><h5>Yazar Listesi</h5></div><div class='ibox-content'><table class='table'><thead><tr><th> Yazar ID</th> <th> Yazar Adı </th></tr></thead>";
+					$.each(w, (index, value) => {
+						tablehtml += `<tr><td>${value.Id}</td> <td>${value.Name}</td></tr>`
+					});
+					tablehtml += "</table></div>";
+					$("#writerlist").html(tablehtml);
+				}
+			});
+		});
+
+
+
+		@*iD'ye göre yazar getirme işleminin scripti*@
+		$("#btngetbyid").click(x => {
+			let id = $("#writerid").val();
+			$.ajax({
+				contentType: "application/json",
+				dataType: "json",
+				type: "get",
+				url: "/Admin/Writer/GetWriterByID/",
+				data: { writerid: id },
+				success: function (fonksiyon1) {
+					let w = jQuery.parseJSON(fonksiyon1);
+					console.log(w);
+
+					let getvalue = `<table class="table table-bordered"> <tr><th> Yazar ID</th> <th>Yazar Adı</th></tr> <tr><td>${w.Id}</td><td>${w.Name}</td></tr></table>`;
+					$("#writerget").html(getvalue);					
+				}
+			});
+		});
+
+		@*Yazar ekleme işleminin scripti*@
+		$("#btnaddwriter").click(function () {
+			let writer = {
+				Id: $("#txtwriterid").val(),
+				Name: $("#txtwritername").val()
+			};
+
+			$.ajax({
+				type: "post",
+				url: "/Admin/Writer/Addwriter/",
+				data: writer,
+				success: function (func) {
+					let result = jQuery.parseJSON(func);
+					alert("Yazar Ekleme İşlemi Gerçekleşti");
+				}
+			});
+		});
+
+
+
+		$("#btndeletewriter").click(x => {
+			let id = $("#txtid").val();
+			$.ajax({
+				url: "/Admin/Writer/DeleteWriter/" + id,
+				type: "post",
+				dataType: "json", // dataType düzeltildi
+				success: function (func) {
+					alert("Yazar Silme İşlemi Gerçekleşti");
+				}
+			});
+		});
+
+
+		$("#btnupdatewriter").click(function () {
+			let writer = {
+				Id: $("#txtid1").val(),
+				Name: $("#txtwritername1").val() // Hata burada düzeltildi
+			};
+
+			$.ajax({
+				type: "post",
+				url: "/Admin/Writer/UpdateWriter/",
+				data: writer,
+				success: function (fonksiyon) {
+					alert("Güncelleme Yapıldı");
+						}
+					});
+				});
+
+	</script>
+}

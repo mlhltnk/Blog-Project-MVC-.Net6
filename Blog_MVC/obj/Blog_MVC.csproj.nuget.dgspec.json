@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\Blog_MVC.csproj": {}
+    "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\Blog_MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj": {
+    "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj",
+        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj",
         "projectName": "BlogApiDemo",
-        "projectPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj",
+        "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj",
         "packagesPath": "C:\\Users\\Melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\BlogApiDemo\\obj\\",
+        "outputPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BlogApiDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\Blog_MVC.csproj": {
+    "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\Blog_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\Blog_MVC.csproj",
+        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\Blog_MVC.csproj",
         "projectName": "Blog_MVC",
-        "projectPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\Blog_MVC.csproj",
+        "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\Blog_MVC.csproj",
         "packagesPath": "C:\\Users\\Melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\Blog_MVC\\obj\\",
+        "outputPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -112,17 +112,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj": {
-                "projectPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj"
+              "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj": {
+                "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj"
               },
-              "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BusinessLayer\\BusinessLayer.csproj"
               },
-              "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -177,6 +177,10 @@
               "target": "Package",
               "version": "[6.0.24, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.4, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.16, )"
@@ -213,14 +217,14 @@
         }
       }
     },
-    "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\BusinessLayer\\BusinessLayer.csproj",
+        "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BusinessLayer\\BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\Melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\BusinessLayer\\obj\\",
+        "outputPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -237,11 +241,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -295,14 +299,14 @@
         }
       }
     },
-    "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\Melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -319,8 +323,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -384,14 +388,14 @@
         }
       }
     },
-    "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj",
+        "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\Melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Melih\\AppData\\Roaming\\NuGet\\NuGet.Config",

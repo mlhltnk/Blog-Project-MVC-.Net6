@@ -1,4 +1,5 @@
-﻿using Blog_MVC.Models;
+﻿using Blog_MVC.Areas.Admin.Models;
+using Blog_MVC.Models;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -11,13 +12,13 @@ namespace Blog_MVC.Areas.Admin.Controllers
     public class AdminRoleController : Controller
     {
         private readonly RoleManager<AppRole> _roleManager;
+        private readonly UserManager<AppUser> _userManager;
 
-        public AdminRoleController(RoleManager<AppRole> roleManager)
+        public AdminRoleController(RoleManager<AppRole> roleManager, UserManager<AppUser> userManager)
         {
             _roleManager = roleManager;
+            _userManager = userManager;
         }
-
-
 
         public IActionResult Index()
         {
@@ -102,6 +103,35 @@ namespace Blog_MVC.Areas.Admin.Controllers
                 return RedirectToAction("Index");
             }
             return View();
+        }
+
+        public IActionResult UserRoleList()    //kullanıcılar ve rolleri görüntülenecek. Rol ataması yapılacak
+        {
+            var values = _userManager.Users.ToList();
+            return View(values);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> AssingRole(int id)
+        {
+            var user = _userManager.Users.FirstOrDefault(x=>x.Id==id);    //verdiğimiz id değerine denk gelen kullanıcıyı user'a atadı
+            var roles = _roleManager.Roles.ToList();                        //şartsız tüm rolleri roles'e atadı
+
+            TempData["Userid"] = user.Id;
+
+            var userRoles = await _userManager.GetRolesAsync(user);   //kullanıcıya atanan rolleri çektik   //aspnetuserroles tablosunda kullancının ıdsine denk gelen kaç role varsa onları döndü
+
+            List<RoleAssignViewModel> model = new List<RoleAssignViewModel>();
+
+            foreach(var item in roles)      //aspnetuserroles tablosundaki tüm rolleri sırayla alır. Bu rollerin id,isim ve exists(true,false) değerlerini RoleAssingviewmodeldeki değerlere atar.
+            {
+                RoleAssignViewModel m = new RoleAssignViewModel();
+                m.RoleID = item.Id;
+                m.Name = item.Name;
+                m.Exists = userRoles.Contains(item.Name);
+                model.Add(m);
+            }
+            return View(model);      //model içerisinde 4 tane değer var(roller). Bunların içerisinde exists durumu true olanlar tikli gelecek AssingRole.cshtml'de
         }
     }
 }

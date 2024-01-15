@@ -2445,11 +2445,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj",
+      "projectUniqueName": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj",
       "projectName": "BlogApiDemo",
-      "projectPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj",
+      "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj",
       "packagesPath": "C:\\Users\\Melih\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Melih\\Desktop\\Blog_MVC\\Blog_MVC\\BlogApiDemo\\obj\\",
+      "outputPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BlogApiDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
