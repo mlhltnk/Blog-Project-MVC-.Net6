@@ -42,15 +42,16 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     {
         options.Cookie.Name = "deneme";
         options.LoginPath = "/Login/index";                                             //cookie bulunamazsa buraya gider
-        options.AccessDeniedPath = "login/index";                                         //yetkisiz kullanýcýlar buraya gider
+        options.AccessDeniedPath = "login/index";                                       //yetkisiz kullanýcýlar buraya gider
     });
 
 
 
-builder.Services.ConfigureApplicationCookie(options =>              //ÝDENTÝTY ÝÞLEMÝNDEN SONRA YAZDIM.***
+builder.Services.ConfigureApplicationCookie(options =>                              //ÝDENTÝTY ÝÞLEMÝNDEN SONRA YAZDIM.***
 {
     options.Cookie.HttpOnly = true;
-    options.ExpireTimeSpan = TimeSpan.FromMinutes(100);         //session süresi 100 dk
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(100);                             //session süresi 100 dk
+    options.AccessDeniedPath = new PathString("/Login/AccessDenied");               //yetkisiz kullanýcýnýn yönlendirileceði sayfa
     options.LoginPath = "/Login/Index/";
     options.SlidingExpiration = true;
 

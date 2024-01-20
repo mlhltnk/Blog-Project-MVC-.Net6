@@ -202,3 +202,4 @@ C:\Users\Melih\Desktop\BlogMVC\Blog_MVC\BlogApiDemo\obj\Debug\net6.0\refint\Blog
 C:\Users\Melih\Desktop\BlogMVC\Blog_MVC\BlogApiDemo\obj\Debug\net6.0\BlogApiDemo.pdb
 C:\Users\Melih\Desktop\BlogMVC\Blog_MVC\BlogApiDemo\obj\Debug\net6.0\BlogApiDemo.genruntimeconfig.cache
 C:\Users\Melih\Desktop\BlogMVC\Blog_MVC\BlogApiDemo\obj\Debug\net6.0\ref\BlogApiDemo.dll
+C:\Users\Melih\Desktop\BlogMVC\Blog_MVC\BlogApiDemo\obj\Debug\net6.0\BlogApiDemo.sourcelink.json

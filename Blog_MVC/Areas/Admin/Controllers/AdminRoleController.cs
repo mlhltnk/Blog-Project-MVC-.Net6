@@ -1,6 +1,8 @@
 ﻿using Blog_MVC.Areas.Admin.Models;
 using Blog_MVC.Models;
+using DocumentFormat.OpenXml.Math;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
@@ -8,7 +10,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 namespace Blog_MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
-
+    [Authorize(Roles = "Admin,Moderator")]                          //buradaki sayfalara sadece Admin ve Moderator rolündeki kullanıcılar erişebilir.
     public class AdminRoleController : Controller
     {
         private readonly RoleManager<AppRole> _roleManager;
@@ -22,7 +24,7 @@ namespace Blog_MVC.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            var values = _roleManager.Roles.ToList();
+            var values = _roleManager.Roles.ToList();                 //rolleri bir liste olarak döner
             return View(values);
         }
 
@@ -75,6 +77,8 @@ namespace Blog_MVC.Areas.Admin.Controllers
 
 
 
+
+
         [HttpPost]
         public async Task<IActionResult> UpdateRole(RoleUpdateViewModel model)
         {
@@ -93,45 +97,84 @@ namespace Blog_MVC.Areas.Admin.Controllers
             return View(model);
         }
 
+
+
+
+
         public async Task<IActionResult> DeleteRole(int id)
         {
-            var values = _roleManager.Roles.FirstOrDefault(x=>x.Id==id);                    //dışarıdan gönderdiğim id değerine Id eşit olanı hafızaya al
+            var values = _roleManager.Roles.FirstOrDefault(x => x.Id == id);                    //dışarıdan gönderdiğim id değerine Id eşit olanı hafızaya al
             var result = await _roleManager.DeleteAsync(values);                            //veritabanından silme işlemi
 
-            if(result.Succeeded)
+            if (result.Succeeded)
             {
                 return RedirectToAction("Index");
             }
             return View();
         }
 
-        public IActionResult UserRoleList()    //kullanıcılar ve rolleri görüntülenecek. Rol ataması yapılacak
+
+
+
+
+
+
+
+        public IActionResult UserRoleList()                  //kullanıcıları listeler ve  Rollerini atayacağın butonları listeler
         {
             var values = _userManager.Users.ToList();
             return View(values);
         }
 
+
+
+
+
         [HttpGet]
-        public async Task<IActionResult> AssingRole(int id)
+        public async Task<IActionResult> AssingRole(int id)                 //rolleri görüntülemek ve kullanıcıya atanmış rolleri çekip göstermek için kullandık
         {
-            var user = _userManager.Users.FirstOrDefault(x=>x.Id==id);    //verdiğimiz id değerine denk gelen kullanıcıyı user'a atadı
-            var roles = _roleManager.Roles.ToList();                        //şartsız tüm rolleri roles'e atadı
+            var user = _userManager.Users.FirstOrDefault(x => x.Id == id);      //verdiğimiz id değerine denk gelen kullanıcıyı user'a atadı
+            var roles = _roleManager.Roles.ToList();                             //şartsız tüm rolleri roles'e atadı
 
-            TempData["Userid"] = user.Id;
+            TempData["Userid"] = user.Id;                                        //kullanıcı ID'si alınır
 
-            var userRoles = await _userManager.GetRolesAsync(user);   //kullanıcıya atanan rolleri çektik   //aspnetuserroles tablosunda kullancının ıdsine denk gelen kaç role varsa onları döndü
+            var userRoles = await _userManager.GetRolesAsync(user);              //kullanıcıya atanan rolleri çektik   //aspnetuserroles tablosunda kullancının ıdsine denk gelen kaç role varsa onları döndü
 
-            List<RoleAssignViewModel> model = new List<RoleAssignViewModel>();
+            List<RoleAssignViewModel> model = new List<RoleAssignViewModel>();             //RoleAssignViewModel sınıfından oluşturulmuş bir liste olan model oluşturulur.
 
-            foreach(var item in roles)      //aspnetuserroles tablosundaki tüm rolleri sırayla alır. Bu rollerin id,isim ve exists(true,false) değerlerini RoleAssingviewmodeldeki değerlere atar.
+            foreach (var item in roles)      //aspnetuserroles tablosundaki tüm rolleri sırayla alır. Bu rollerin id,isim ve exists(true,false) değerlerini RoleAssingviewmodeldeki değerlere atar.
             {
                 RoleAssignViewModel m = new RoleAssignViewModel();
                 m.RoleID = item.Id;
                 m.Name = item.Name;
-                m.Exists = userRoles.Contains(item.Name);
+                m.Exists = userRoles.Contains(item.Name);                      //Contains metodu, userRoles içinde item.Name'i arar, Eğer varsa true döner; bulunmuyorsa, false döner.
                 model.Add(m);
             }
             return View(model);      //model içerisinde 4 tane değer var(roller). Bunların içerisinde exists durumu true olanlar tikli gelecek AssingRole.cshtml'de
+        }
+
+
+
+
+        [HttpPost]
+        public async Task<IActionResult> AssingRole(List<RoleAssignViewModel> model)                 //kullanıcıya rolleri atamak, seçilen rollerle kullanıcıyı güncellemek için yaptık
+        {
+            var userid = (int)TempData["Userid"];                                                   // TempData üzerinden kullanıcı ID'sini al
+
+            var user = _userManager.Users.FirstOrDefault(x => x.Id == userid);                      //kullanıcıyı ID'sine göre bul
+
+            foreach (var item in model)                                                             // Modeldeki her bir öğeyi kontrol et
+            {   
+                if(item.Exists)                                                                     //eğer checkbox (tiki) seçili ise
+                {
+                    await _userManager.AddToRoleAsync(user, item.Name);                             //chechboxlar içinde seçili olanları role tablosuna ekleyecek(kullanıcıya rolü ekle)
+                }
+                else
+                {
+                    await _userManager.RemoveFromRoleAsync(user, item.Name);                        //chechboxlar içinde seçili olmayanları listeden silecek(kullanıcıdan rolü kaldırın)
+                }
+            }
+            return RedirectToAction("UserRoleList");                                                //rol güncellendikten sonra userrolelist sayfasına dön
         }
     }
 }

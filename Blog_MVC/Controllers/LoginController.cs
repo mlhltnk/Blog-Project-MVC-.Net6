@@ -60,7 +60,10 @@ namespace Blog_MVC.Controllers
             return RedirectToAction("Index", "Login");
         }
 
-
+        public IActionResult AccessDenied()        //yetkisiz kullanıcının yönleneceği sayfa
+        {
+            return View();
+        }
     }
 }
 

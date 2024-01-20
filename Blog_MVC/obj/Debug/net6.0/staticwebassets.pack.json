@@ -5,6 +5,30 @@
       "PackagePath": "staticwebassets\\Blog_MVC.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\wwwroot\\403forbidden\\README.markdown",
+      "PackagePath": "staticwebassets\\403forbidden\\README.markdown"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\wwwroot\\403forbidden\\dist\\index.html",
+      "PackagePath": "staticwebassets\\403forbidden\\dist\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\wwwroot\\403forbidden\\dist\\style.css",
+      "PackagePath": "staticwebassets\\403forbidden\\dist\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\wwwroot\\403forbidden\\license.txt",
+      "PackagePath": "staticwebassets\\403forbidden\\license.txt"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\wwwroot\\403forbidden\\src\\index.html",
+      "PackagePath": "staticwebassets\\403forbidden\\src\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\wwwroot\\403forbidden\\src\\style.css",
+      "PackagePath": "staticwebassets\\403forbidden\\src\\style.css"
+    },
+    {
       "Id": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\wwwroot\\WriterImageFile\\569773e8-e713-4fd8-9c63-220af8cc476e.jpg",
       "PackagePath": "staticwebassets\\WriterImageFile\\569773e8-e713-4fd8-9c63-220af8cc476e.jpg"
     },
@@ -6869,10 +6893,6 @@
       "PackagePath": "staticwebassets\\weberror\\w3layouts-license.txt"
     },
     {
-      "Id": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\.DS_Store",
-      "PackagePath": "staticwebassets\\webwriter\\.DS_Store"
-    },
-    {
       "Id": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\.gitignore",
       "PackagePath": "staticwebassets\\webwriter\\.gitignore"
     },
@@ -6883,10 +6903,6 @@
     {
       "Id": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\LICENSE",
       "PackagePath": "staticwebassets\\webwriter"
-    },
-    {
-      "Id": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\PSD\\.DS_Store",
-      "PackagePath": "staticwebassets\\webwriter\\PSD\\.DS_Store"
     },
     {
       "Id": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\wwwroot\\webwriter\\PSD\\Purple_dashboard_free.psd",

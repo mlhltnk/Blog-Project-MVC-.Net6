@@ -49,3 +49,4 @@ C:\Users\Melih\Desktop\BlogMVC\Blog_MVC\DataAccessLayer\obj\Debug\net6.0\refint\
 C:\Users\Melih\Desktop\BlogMVC\Blog_MVC\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
 C:\Users\Melih\Desktop\BlogMVC\Blog_MVC\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
 C:\Users\Melih\Desktop\BlogMVC\Blog_MVC\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll
+C:\Users\Melih\Desktop\BlogMVC\Blog_MVC\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.sourcelink.json

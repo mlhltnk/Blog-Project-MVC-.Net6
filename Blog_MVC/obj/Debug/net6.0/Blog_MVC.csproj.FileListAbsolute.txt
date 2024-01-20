@@ -850,3 +850,4 @@ C:\Users\Melih\Desktop\BlogMVC\Blog_MVC\Blog_MVC\obj\Debug\net6.0\refint\Blog_MV
 C:\Users\Melih\Desktop\BlogMVC\Blog_MVC\Blog_MVC\obj\Debug\net6.0\Blog_MVC.pdb
 C:\Users\Melih\Desktop\BlogMVC\Blog_MVC\Blog_MVC\obj\Debug\net6.0\Blog_MVC.genruntimeconfig.cache
 C:\Users\Melih\Desktop\BlogMVC\Blog_MVC\Blog_MVC\obj\Debug\net6.0\ref\Blog_MVC.dll
+C:\Users\Melih\Desktop\BlogMVC\Blog_MVC\Blog_MVC\obj\Debug\net6.0\Blog_MVC.sourcelink.json
