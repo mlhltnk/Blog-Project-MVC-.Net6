@@ -9,18 +9,17 @@ namespace Blog_MVC.Controllers
 		{
 			Context c = new Context();
 
-            var username = User.Identity.Name;           //kullanıcı adını çektim (sisteme authentica olduğum değer)
+            var username = User.Identity.Name;           
 
-            var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();  //name'den mail adresini çektim
+            var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();  
+			var writerid = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();  
 
-			var writerid = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();  //blog tablosunda writerId var o yüzden writerid'yi writers tablosundan writermaile göre writerId olacak şekilde çektik
-
-            ViewBag.v1 = c.Blogs.Count().ToString();   //GenericRepositoryde böyle bir metot olmadığı için burada context'i çağırarak sıfırdan tanımladık
+            ViewBag.v1 = c.Blogs.Count().ToString();   
 			
-			ViewBag.v2 = c.Blogs.Where(x => x.WriterId == writerid).Count();   //writerid YANİ sisteme kim authentice olursa ona ait veriler(blog sayısı) gelmiş olacak
+			ViewBag.v2 = c.Blogs.Where(x => x.WriterId == writerid).Count();  
 																		
 			
-			ViewBag.v3 = c.Categories.Count().ToString();   //kategori sayısını indexe taşıdık
+			ViewBag.v3 = c.Categories.Count().ToString();   
 			return View();
 		}
 	}

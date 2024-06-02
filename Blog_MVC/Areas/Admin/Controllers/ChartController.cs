@@ -10,12 +10,12 @@ namespace Blog_MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class ChartController : Controller
     {
-        public IActionResult Index()   //kategorilerin grafik üzerinde listeleneceği action olacak
+        public IActionResult Index()   
         {
             return View();
         }
 
-        public IActionResult CategoryChart()  //verilerime static olarka değer atamak için bir metot oluşturdum
+        public IActionResult CategoryChart()  
         {
             List<CategoryClass> list = new List<CategoryClass>();
 

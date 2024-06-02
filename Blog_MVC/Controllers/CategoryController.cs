@@ -8,7 +8,7 @@ namespace Blog_MVC.Controllers
     {
         CategoryManager cm = new CategoryManager(new EfCategoryRepository());
 
-        //cm nesnesi ile bütün metodlarıma erişim sağlayacağım
+        
         public IActionResult Index()
         {
             var values = cm.TGetlist();

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Abstract
 {
-    public interface IUserService: IGenericService<AppUser>  //identityden sonra yaptık
+    public interface IUserService: IGenericService<AppUser>  
     {
     }
 }

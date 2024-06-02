@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 namespace Blog_MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Admin,Moderator")]                          //buradaki sayfalara sadece Admin ve Moderator rolündeki kullanıcılar erişebilir.
+    [Authorize(Roles = "Admin,Moderator")]                         
     public class AdminRoleController : Controller
     {
         private readonly RoleManager<AppRole> _roleManager;
@@ -24,7 +24,7 @@ namespace Blog_MVC.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            var values = _roleManager.Roles.ToList();                 //rolleri bir liste olarak döner
+            var values = _roleManager.Roles.ToList();                 
             return View(values);
         }
 

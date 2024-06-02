@@ -9,7 +9,7 @@ using X.PagedList;
 
 namespace Blog_MVC.Areas.Admin.Controllers
 {
-	[Area("Admin")]  //bu kontrollerda oluşturduğum actionların areadan gelmiş olduğunu programa bildirdim
+	[Area("Admin")]  
 	public class CategoryController : Controller
 	{
 		CategoryManager cm = new CategoryManager(new EfCategoryRepository());
@@ -17,7 +17,7 @@ namespace Blog_MVC.Areas.Admin.Controllers
 		public IActionResult Index(int page = 1)
 		{
 
-			var values = cm.TGetlist().ToPagedList(page, 2);  //pagedlist tanımı(ilk değer;başta gelecek sayfa, ikinci değer sayfada kaç obje olacağının değeri)
+			var values = cm.TGetlist().ToPagedList(page, 2);  
 			return View(values);
 		}
 
@@ -50,7 +50,7 @@ namespace Blog_MVC.Areas.Admin.Controllers
             }
         }
 
-        public IActionResult CategoryDelete(int id)  //silme işleminde ONCLİCK kullandık ve Ekstra bir sayfa oluşturmadık
+        public IActionResult CategoryDelete(int id)  
         {
             var value = cm.TGetById(id);
             cm.TDelete(value);

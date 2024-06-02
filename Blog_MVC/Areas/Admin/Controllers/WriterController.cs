@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 namespace Blog_MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class WriterController : Controller                    //Ajax ile verilerin consoleda listelenmesi işlemi
+    public class WriterController : Controller                   
     {
         public IActionResult Index() 
         {
@@ -13,7 +13,7 @@ namespace Blog_MVC.Areas.Admin.Controllers
         }
 
 
-        public IActionResult GetWriterByID(int writerid)  //idye göre 1 yazar getirme işlemi metodu   //Aşağıdaki listeyi bir değişkene atayıp bunu json türüne convert etmem gerekiyor
+        public IActionResult GetWriterByID(int writerid)  
         {
             var findWriter = writers.FirstOrDefault(x => x.Id == writerid);
             var jsonWriters = JsonConvert.SerializeObject(findWriter);
@@ -22,7 +22,7 @@ namespace Blog_MVC.Areas.Admin.Controllers
 
 
         [HttpPost]
-        public IActionResult AddWriter(WriterClass w)    //Ajax ile yazar ekleme işlemi
+        public IActionResult AddWriter(WriterClass w)    
         {
             writers.Add(w);
             var Jsonwriters = JsonConvert.SerializeObject(w);
@@ -30,7 +30,7 @@ namespace Blog_MVC.Areas.Admin.Controllers
         }
 
 		[HttpPost]
-		public IActionResult DeleteWriter(int id)       //Ajax ile yazar silme işlemi
+		public IActionResult DeleteWriter(int id)      
 		{
             var writer = writers.FirstOrDefault(w => w.Id == id);
             writers.Remove(writer);
@@ -38,7 +38,7 @@ namespace Blog_MVC.Areas.Admin.Controllers
         }
 
 
-        public IActionResult UpdateWriter(WriterClass w)   //Ajax ile yazar güncelleme işlemi
+        public IActionResult UpdateWriter(WriterClass w)   
 		{
             var writer = writers.FirstOrDefault(x => x.Id == w.Id);
             writer.Name= w.Name;
@@ -47,7 +47,7 @@ namespace Blog_MVC.Areas.Admin.Controllers
         }
 
 
-        public IActionResult WriterList()        //yazar listesini getirir   //Aşağıdaki listeyi bir değişkene atayıp bunu json türüne convert etmem gerekiyor
+        public IActionResult WriterList()        
         {
             var jsonWriters = JsonConvert.SerializeObject(writers);
             return Json(jsonWriters);

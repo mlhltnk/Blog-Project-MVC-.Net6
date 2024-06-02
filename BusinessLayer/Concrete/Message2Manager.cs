@@ -20,7 +20,7 @@ namespace BusinessLayer.Concrete
 
         public List<Message2> GetInboxListByWriter(int id)
         {
-            return _message2Dal.GetInboxWithMessageByWriter(id);  //idden girilen değere göre yazara göre mesajları getirecek. İMZASI EFMESSAGE2REPOSİTORYDE
+            return _message2Dal.GetInboxWithMessageByWriter(id);  
         }
 
         public List<Message2> GetSenboxListByWriter(int id)
@@ -30,7 +30,7 @@ namespace BusinessLayer.Concrete
 
         public void TAdd(Message2 t)
         {
-           _message2Dal.Insert(t);        //mesaj gönderme işlemi için burayı yazdım
+           _message2Dal.Insert(t);        
         }
 
         public void TDelete(Message2 t)

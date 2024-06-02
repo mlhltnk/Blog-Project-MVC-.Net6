@@ -5,13 +5,13 @@
 
 <h1>Yazar Ajax İşlemleri</h1>
 <br /> 
-<button type="button" id="btngetlist" class="btn btn-outline-primary">Yazar Listesi</button>    @*Buton tetiklenince tüm yazarları getir scripti çalışacak*@
+<button type="button" id="btngetlist" class="btn btn-outline-primary">Yazar Listesi</button>   
 
-<button type="button" id="btngetbyid" class="btn btn-outline-success">Yazar Getir</button>      @*Buton tetiklenince idye göre yazar getir scripti çalışacak*@
+<button type="button" id="btngetbyid" class="btn btn-outline-success">Yazar Getir</button>     
 
-<button type="button" id="btnaddwriter" class="btn btn-outline-info">Yazar Ekle</button>      @*Buton tetiklenince ekleme scripti çalışacak*@
+<button type="button" id="btnaddwriter" class="btn btn-outline-info">Yazar Ekle</button>      
 
-<button type="button" id="btndeletewriter" class="btn btn-outline-danger">Yazar Sil</button>		@*Buton tetiklenince silme scripti çalışacak*@
+<button type="button" id="btndeletewriter" class="btn btn-outline-danger">Yazar Sil</button>		
 
 <button type="button" id="btnupdatewriter" class="btn btn-outline-warning">Yazar Güncelle</button>
 
@@ -25,7 +25,7 @@
 
 
 <div id="writerget">    
-	@*buranın içeriği en alttaki scriptten geliyor idye göre yazar getirme işlemi*@
+	
 </div>
 
 <br />
@@ -57,7 +57,7 @@
 @section scripts{
 	<script>
 
-		@*Tüm Yazarları getirme(listeleme) işleminin scripti(tabloyu script üzerinden göndereceğiz)*@
+		
 		$("#btngetlist").click(function () {
 			$.ajax({
 				contentType: "application/json",			//içeriğin türü
@@ -79,7 +79,7 @@
 
 
 
-		@*iD'ye göre yazar getirme işleminin scripti*@
+		
 		$("#btngetbyid").click(x => {
 			let id = $("#writerid").val();
 			$.ajax({
@@ -98,7 +98,7 @@
 			});
 		});
 
-		@*Yazar ekleme işleminin scripti*@
+		
 		$("#btnaddwriter").click(function () {
 			let writer = {
 				Id: $("#txtwriterid").val(),

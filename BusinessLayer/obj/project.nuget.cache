@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GLEtJckYAEngzyVzTQ7tcqjqQ4Wuie7siap8m2ris/Bzh20KwkRel/zL4+32Q4qN56/MlHMwPbVocqBxVeakvg==",
+  "dgSpecHash": "YRLp4FZ1gYE0hA0q3maqiWmCGMjGNjcB0O8Nk3EFLYvH9GX1GtC6ZYCKcdGUxD40S93aM5d5jzcJXRgdOqAcAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BusinessLayer\\BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Melih\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
     "C:\\Users\\Melih\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.4.0\\fluentvalidation.aspnetcore.10.4.0.nupkg.sha512",

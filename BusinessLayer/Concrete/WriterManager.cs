@@ -35,10 +35,10 @@ namespace BusinessLayer.Concrete
 
         public Writer TGetById(int id)
         {
-            return _writerdal.GetById(id);  //idye göre değer getirecek
+            return _writerdal.GetById(id);  
         }
 
-        public List<Writer> TGetlist()   //admin panelinde bütün yazarları listelemek için bunu kullancağım
+        public List<Writer> TGetlist()   
         {
             throw new NotImplementedException();
         }

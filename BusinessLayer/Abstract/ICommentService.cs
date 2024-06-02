@@ -12,14 +12,12 @@ namespace BusinessLayer.Abstract
 
 		void CommentAdd(Comment comment);
 
-		//void CategoryDelete(Category category);
-
-		//void CategoryUpdate(Category category);
+		
 
 		List<Comment> Getlist(int id);
 
-        //Category GetById(int id);
+     
 
-        List<Comment> GetCommentListWithBlog();  //Blog->index sayfasında categoryleri getirme işlemi(blog listesini kategori ile getir)
+        List<Comment> GetCommentListWithBlog();  
     }
 }

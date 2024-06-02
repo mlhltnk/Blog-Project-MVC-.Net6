@@ -10,15 +10,13 @@ namespace Blog_MVC.Controllers
 	{
 		public async Task<IActionResult> Index()
 		{
-			var httpClient= new HttpClient();  //httpclienttan new'len
-			var responseMessage = await httpClient.GetAsync("https://localhost:7093/api/Default");				//veri getirme
-			var jsonString = await responseMessage.Content.ReadAsStringAsync(); //responsemessadeden gelen mesajın içeriği ReadAsStringAsync olarak karşıla
+			var httpClient= new HttpClient();  
+			var responseMessage = await httpClient.GetAsync("https://localhost:5003/api/Default");				
+			var jsonString = await responseMessage.Content.ReadAsStringAsync(); 
 			var values = JsonConvert.DeserializeObject<List<Class1>>(jsonString);  
             return View(values);
 		}
-        //Deserialize ; JSON verilerini.Net nesnesine dönüştürmeye yarar
-        //Serialize ; .Net nesnesini JSON verisine dönüştürmeye yarar.
-        //Veriyi apiye gönderirken serialize olarak göndeririz. Veriyi alırken deserialize yaparak alırız.
+        
 
 
         [HttpGet]
@@ -34,8 +32,8 @@ namespace Blog_MVC.Controllers
         {
             var httpClient = new HttpClient();
             var jsonEmployee = JsonConvert.SerializeObject(p);
-            StringContent content = new StringContent(jsonEmployee,Encoding.UTF8,"application/json");  //encoding.utf8->türkçe karakter
-            var responseMessage = await httpClient.PostAsync("https://localhost:7093/api/Default", content);   //apiye bağlı olarak gerçekleşecek işlemi yazıyoruz
+            StringContent content = new StringContent(jsonEmployee,Encoding.UTF8,"application/json");  
+            var responseMessage = await httpClient.PostAsync("https://localhost:5003/api/Default", content);   
             if(responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");
@@ -52,7 +50,7 @@ namespace Blog_MVC.Controllers
         public async Task<IActionResult> EditEmployee(int id)
         {
             var httpClient = new HttpClient();
-            var responseMessage = await httpClient.GetAsync("https://localhost:7093/api/Default/" + id);   //veri getirme
+            var responseMessage = await httpClient.GetAsync("https://localhost:5003/api/Default/" + id);   //veri getirme
             if(responseMessage.IsSuccessStatusCode)
             {
                 var jsonEmployee = await responseMessage.Content.ReadAsStringAsync();
@@ -71,7 +69,7 @@ namespace Blog_MVC.Controllers
             var httpClient = new HttpClient();
             var jsonEmployee =JsonConvert.SerializeObject(p);
             var content = new StringContent(jsonEmployee, Encoding.UTF8, "application/json");
-            var responseMessage = await httpClient.PutAsync("https://localhost:7093/api/Default/" ,content);
+            var responseMessage = await httpClient.PutAsync("https://localhost:5003/api/Default/" ,content);
             if(responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");
@@ -86,7 +84,7 @@ namespace Blog_MVC.Controllers
         public async Task<IActionResult> DeleteEmployee(int id)
         {
             var httpClient = new HttpClient();
-            var responseMessage = await httpClient.DeleteAsync("https://localhost:7093/api/Default/" + id);   //veri getirme
+            var responseMessage = await httpClient.DeleteAsync("https://localhost:5003/api/Default/" + id);   //veri getirme
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");
@@ -103,7 +101,7 @@ namespace Blog_MVC.Controllers
 
 
 
-    public class Class1   //employee'daki property isimlerini karşılamak zorunda  //apideki verileri buraya ara katman olarak çekiyoruz
+    public class Class1   
     {
         public int ID { get; set; }
         public string Name { get; set; }

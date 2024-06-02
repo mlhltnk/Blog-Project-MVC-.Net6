@@ -14,9 +14,9 @@ namespace EntityLayer.Concrete
 
         public string BlogTitle { get; set; }
 
-        public string BlogContent { get; set; }  //blogiçeriği
+        public string BlogContent { get; set; }  
 
-        public string BlogThumbnailImage { get; set; } //küçük görsel
+        public string BlogThumbnailImage { get; set; } 
 
         public string? BlogImage { get; set; }
 
@@ -24,13 +24,13 @@ namespace EntityLayer.Concrete
 
         public bool BlogStatus { get; set; }
 
-        public int CategoryId { get; set; }  //bire çok ilişkide çokun olduğu tarafta foreing key tanımlamamız gerekiyor.
+        public int CategoryId { get; set; } 
 
-        public Category Category { get; set; }  //bir blogun bir categorysi olabilir
+        public Category Category { get; set; }  
 
-		public int WriterId { get; set; }  //bire çok ilişkide çokun olduğu tarafta foreing key tanımlamamız gerekiyor.
+		public int WriterId { get; set; } 
 
-		public Writer Writer { get; set; }  //bir writerın bir categorysi olabilir
+		public Writer Writer { get; set; }  
 
 		public List<Comment> Comments { get; set; }
     }

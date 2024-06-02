@@ -30,7 +30,7 @@ namespace BusinessLayer.Concrete
 
         public List<Comment> Getlist(int id)
 		{
-			return _commentDal.GetListAll(x=>x.BlogID ==id);  //blogID 'im id ye eşit olanlar için işlem gerçekleşecek
+			return _commentDal.GetListAll(x=>x.BlogID ==id);  
 		}     
     }
 }

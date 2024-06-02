@@ -9,7 +9,7 @@ namespace EntityLayer.Concrete
 {
     public class Category
     {
-        //property tanımlama--> erişim belirleyici türü--değişkentürü--isim--{get,set}
+     
 
         [Key]
         public int CategoryId { get; set; }
@@ -17,6 +17,6 @@ namespace EntityLayer.Concrete
         public string  CategoryDescription { get; set; }
         public bool CategoryStatus { get; set; }
 
-        public List<Blog> Blogs { get; set; }  //bir categorinin birden çok blogu olabilir
+        public List<Blog> Blogs { get; set; }  
     }
 }

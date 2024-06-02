@@ -13,28 +13,14 @@ namespace BusinessLayer.Concrete
 {
     public class CategoryManager : ICategoryService
     {
-        ICategoryDal _categoryDal;  //burada efcategoryrepository nesnesini kullanmama sebebimimiz entityframeworke bağlı kalmamak.
+        ICategoryDal _categoryDal;  
 
         public CategoryManager(ICategoryDal categoryDal)
         {
             _categoryDal = categoryDal;
         }
 
-        //public void CategoryAdd(Category category)
-        //{
-        //    _categoryDal.Insert(category);
-
-        //}
-
-        //public void CategoryDelete(Category category)
-        //{
-        //    _categoryDal.Delete(category);
-        //}
-
-        //public void CategoryUpdate(Category category)
-        //{
-        //    _categoryDal.Update(category);
-        //}
+   
 
         public Category TGetById(int id)
         {

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-    public class EfUserRepository: GenericRepository<AppUser>, IUserDal  //identity sonrası yapıldı
+    public class EfUserRepository : GenericRepository<AppUser>, IUserDal  //identity sonrası yapıldı
     {
     }
 }

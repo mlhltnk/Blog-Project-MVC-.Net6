@@ -10,7 +10,7 @@ namespace Blog_MVC.Controllers
 		NewsLetterManager nm = new NewsLetterManager(new EfNewsLetterRepository());
 
 		[HttpGet]
-		public PartialViewResult SubscribeMail()  //blogreadall sayfasındaki mail bültenine ekleme kısmını yapıyoruz
+		public PartialViewResult SubscribeMail()  
 		{
 			return PartialView();
 		}
@@ -20,18 +20,12 @@ namespace Blog_MVC.Controllers
 		{
 			p.MailStatus = true;
 			nm.AddNewsLetter(p);
-			Response.Redirect("/Blog/BlogReadAll/" + 1);   //aynı sayfada bulunan abone ol kısmında; mail adresini girerek başka bir db'ye kaydettirme işlemi
+			Response.Redirect("/Blog/BlogReadAll/" + 1);   
 			return PartialView();
 
 
 
-			/* public IActionResult SubscribeMail(NewsLetter p)          --> üsttekinin başka bir yöntemi 
-		{
-			p.MailStatus = true;
-			nm.AddNewsLetter(p);
-			return RedirectToAction("Index","Blog");
-		}
-			*/
+		
 		}
 	}
 }

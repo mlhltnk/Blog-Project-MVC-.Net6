@@ -27,8 +27,8 @@ namespace DataAccessLayer.Repositories
         public List<T> GetListAll()
         {
             using var c = new Context();
-            return c.Set<T>().ToList();      //Sete bağlı olarak kullanmam lazım. Entity yok çünkü
-                                            //burada direk listeleme işlemi yaptık
+            return c.Set<T>().ToList();      
+                                          
         }
 
         public void Insert(T t)
@@ -41,9 +41,8 @@ namespace DataAccessLayer.Repositories
 		public List<T> GetListAll(Expression<Func<T, bool>> filter)
 		{
 			using var c = new Context();
-			return c.Set<T>().Where(filter).ToList();   //filterdan gelecek olan değere göre listeleme işlemi gerçekleştirir
-                                                        //filter'ın içeriği ...Manager'larda linq sorgularla dolduruluyor.
-                                                        //Buraya direk LINQ sorgusunu yazmama sebebi genel bir ifade yazmak ve herkesin kullanabilmesini sağlamak.
+			return c.Set<T>().Where(filter).ToList();   
+                                                        
 		}
 
 		public void Update(T t)

@@ -13,10 +13,10 @@ namespace Blog_MVC.Areas.Admin.Controllers
 			using (var workbook = new XLWorkbook())
 			{
 				var worksheet = workbook.Worksheets.Add("BlogListesi");
-				worksheet.Cell(1, 1).Value = "Blog ID";  //1.satır 1. sutun değeri
-				worksheet.Cell(1, 2).Value = "Blog Adı"; //1.satır 2. sutun değeri
+				worksheet.Cell(1, 1).Value = "Blog ID";  
+				worksheet.Cell(1, 2).Value = "Blog Adı";
 
-				int BlogRowCount = 2;  //veriler 2. satırdan başlasın,çünkü ilk satırda başlıklar var
+				int BlogRowCount = 2;  
 				foreach (var item in GetBlogList())
 				{
 					worksheet.Cell(BlogRowCount, 1).Value = item.ID;
@@ -28,12 +28,12 @@ namespace Blog_MVC.Areas.Admin.Controllers
 				{
 					workbook.SaveAs(stream);
 					var content = stream.ToArray();
-					return File(content, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","Calisma1.xlsx");   //excelin format tanımı
+					return File(content, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","Calisma1.xlsx");   
 				}
 			}
 		}
 
-		public List<BlogModel> GetBlogList()  //veriyi static olarak alacağız
+		public List<BlogModel> GetBlogList()  
 		{
 			List<BlogModel> bm = new List<BlogModel>
 			{
@@ -44,7 +44,7 @@ namespace Blog_MVC.Areas.Admin.Controllers
 			return bm;
 		}
 
-		public IActionResult BlogListExcel()  //üstteki metotları tetiklemek için kullanacağız
+		public IActionResult BlogListExcel()  
 		{
 			return View();
 		}
@@ -52,7 +52,7 @@ namespace Blog_MVC.Areas.Admin.Controllers
 
 
 
-//*****************************üstteki kodlarda veri statik, alttaki kodlarda veri dinamik*************************************************
+
 
 
 
@@ -62,10 +62,10 @@ namespace Blog_MVC.Areas.Admin.Controllers
             using (var workbook = new XLWorkbook())
             {
                 var worksheet = workbook.Worksheets.Add("BlogListesi");
-                worksheet.Cell(1, 1).Value = "Blog ID";  //1.satır 1. sutun değeri
-                worksheet.Cell(1, 2).Value = "Blog Adı"; //1.satır 2. sutun değeri
+                worksheet.Cell(1, 1).Value = "Blog ID";  
+                worksheet.Cell(1, 2).Value = "Blog Adı"; 
 
-                int BlogRowCount = 2;  //veriler 2. satırdan başlasın,çünkü ilk satırda başlıklar var
+                int BlogRowCount = 2;  
                 foreach (var item in BlogTitleList())
                 {
                     worksheet.Cell(BlogRowCount, 1).Value = item.ID;
@@ -82,7 +82,7 @@ namespace Blog_MVC.Areas.Admin.Controllers
             }
         }
 
-		public List<BlogModel2> BlogTitleList()  //veriyi context üzerinden db'den çektiğimiz senaryo
+		public List<BlogModel2> BlogTitleList()  
 		{
 			List<BlogModel2> bm = new List<BlogModel2>();
 			using (var c= new Context())

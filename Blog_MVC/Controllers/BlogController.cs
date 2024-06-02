@@ -18,7 +18,7 @@ namespace Blog_MVC.Controllers
         [AllowAnonymous]
         public IActionResult Index()
         {
-            var values = bm.GetBlogListWithCategory();
+            var values = bm.GetBlogListWithCategory();   
             return View(values);
         }
 
@@ -34,20 +34,21 @@ namespace Blog_MVC.Controllers
 
 
 
-        public IActionResult BlogListByWriter()   //yazara göre blog listesi getir  //writer tablosunu iptal edip appuser tablosunu kullandık
+        public IActionResult BlogListByWriter()   
         {
             Context c = new Context();
 
             var username = User.Identity.Name;
 
 
-            //Users; Appuser tablosunu ifade eder. 
-            var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();    //kullanıcı adını kullanarak mail adresini çektim  //Users tablosunda UserName özelliği username ile eşleşen bir kullanıcının e-posta adresini bulur
+       
+            var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();    
 
-            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();  //Writers tablosunda WriterMail özelliği usermail ile eşleşen bir yazarın WriterID değerini bulur.
+            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();  
 
 
-            var values= bm.GetListWithCategoryByWriterBlogManager(writerID);             //login olanın idsine göre verisini getirme   //GetListWithCategoryByWriterblogmanager'ın bir önceki katmanında include işlemi var
+            var values= bm.GetBlogListWithCategoryByWriter(writerID);             
+           
 
             return View(values);
         }
@@ -59,16 +60,15 @@ namespace Blog_MVC.Controllers
 
         [HttpGet]
         public IActionResult BlogAdd()
-        {  //---------------------DROPDOWNLİST KULLANIMI---------------------------------
+        { 
             CategoryManager cm = new CategoryManager(new EfCategoryRepository());
             List<SelectListItem> categoryvalues = (from x in cm.TGetlist()
                                                    select new SelectListItem
                                                    {
-                                                       Text = x.CategoryName,  //dropdown içinde kullanıcının gördüğü kısım
-                                                       Value = x.CategoryId.ToString()  //kullanıcıya görünmeyen kısım
+                                                       Text = x.CategoryName,  
+                                                       Value = x.CategoryId.ToString()  
                                                    }).ToList();
-            ViewBag.cv = categoryvalues;   //categoryvaluesden gelen değişkenleri dropdowna taşıyacağım
-            //-------------------------DROPDOWNLİST KULLANIM------------------------------  
+            ViewBag.cv = categoryvalues;  
             return View();
         }
 
@@ -78,33 +78,32 @@ namespace Blog_MVC.Controllers
         [HttpPost]
         public IActionResult BlogAdd(Blog p)
         {
-            //***login olanın verisini getirme işlemi  
+           
             Context c = new Context();
             var username = User.Identity.Name;
 
-            //Users; Appuser tablosunu ifade eder. 
-            var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();    //kullanıcı adını kullanarak mail adresini çektim  //Users tablosunda UserName özelliği username ile eşleşen bir kullanıcının e-posta adresini bulur
+            
+            var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();    
 
-            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();  //Writers tablosunda WriterMail özelliği usermail ile eşleşen bir yazarın WriterID değerini bulur.
+            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();  
 
-            //Login olan username ile appuser tablosundan mail adresini bulduk. SOnra bu mail adresi ile writers tablosundan writerid'yi bulduk
-            //***
+            
 
-            BlogValidator bv = new BlogValidator();    //validatörü burada newledik kullanmak için
-            ValidationResult results = bv.Validate(p);     //pdan gelen değerleri validate et
-            if (results.IsValid)  //işlem geçerliyse
+            BlogValidator bv = new BlogValidator();    
+            ValidationResult results = bv.Validate(p);     
+            if (results.IsValid)  
             {
                 p.BlogStatus = true;
                 p.BlogCreateDate = DateTime.Parse(DateTime.Now.ToShortDateString());
                 p.WriterId = writerID;
                 bm.TAdd(p);
-                return RedirectToAction("BlogListByWriter", "Blog");  //BlogListByWriter actionu 'Blog'controller içinde
+                return RedirectToAction("BlogListByWriter", "Blog");  
             }
             else
             {
-                foreach (var item in results.Errors) //işlem geçerli değilse
+                foreach (var item in results.Errors) 
                 {
-                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);  //model durumuna hatayı veren properynin ismi ve hatanın mesajını ekle
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);  
                 }
             }          
             return View();
@@ -129,8 +128,8 @@ namespace Blog_MVC.Controllers
             List<SelectListItem> categoryvalues = (from x in cm.TGetlist()
                                                    select new SelectListItem
                                                    {
-                                                       Text = x.CategoryName,  //dropdown içinde kullanıcının gördüğü kısım
-                                                       Value = x.CategoryId.ToString()  //kullanıcıya görünmeyen kısım
+                                                       Text = x.CategoryName,  
+                                                       Value = x.CategoryId.ToString()  
                                                    }).ToList();
             ViewBag.cv = categoryvalues;   
           
@@ -142,14 +141,14 @@ namespace Blog_MVC.Controllers
         [HttpPost]
         public IActionResult EditBlog(Blog p)
         {
-            //***login olanın verisini getirme işlemi
+           
             Context c = new Context();
             var username = User.Identity.Name;
 
-            var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();    //kullanıcı adını kullanarak mail adresini çektim  //Users tablosunda UserName özelliği username ile eşleşen bir kullanıcının e-posta adresini bulur
+            var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();    
 
-            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();  //Writers tablosunda WriterMail özelliği usermail ile eşleşen bir yazarın WriterID değerini bulur.
-         
+            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault(); 
+
             //***
             p.WriterId = writerID;
             p.BlogCreateDate = DateTime.Parse(DateTime.Now.ToShortDateString());

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrete
 {
-    public class Context:IdentityDbContext<AppUser,AppRole,int> 
+    public class Context:IdentityDbContext<AppUser,AppRole,int>   
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -17,7 +17,7 @@ namespace DataAccessLayer.Concrete
         }
 
 
-        //*****bir tabloda 2 ilişki işleminin ilişkilendirilme işlemi******
+   
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Message2>()
@@ -32,9 +32,9 @@ namespace DataAccessLayer.Concrete
                 .HasForeignKey(z=>z.ReceiverID)
                 .OnDelete(DeleteBehavior.ClientSetNull);
 
-            base.OnModelCreating(modelBuilder);             //BUNU YAZMAZSAK İDENTİTY İŞLEMİNDE HATA VERİYOR
+            base.OnModelCreating(modelBuilder);           
         }
-        //****************************************************************
+     
 
         public DbSet<About> Abouts { get; set; }
 

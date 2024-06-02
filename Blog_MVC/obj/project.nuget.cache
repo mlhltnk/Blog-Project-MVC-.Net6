@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IQZW9bz6GiZzFu4e8VYufzWzX29Qry+NEYxgXP57Kl0CHK6/R1xqk+T9DsqHk/49HcV8xbBPcobvB3V5wYuAHw==",
+  "dgSpecHash": "VYZBkC2ObWo0UsOMxk696npwHpqBm03iNmLRvCmuxGEOEXHnX7q7eVQuJGDNONbEqRVt/lhZ0YkLSD/hHaneJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\Blog_MVC\\Blog_MVC.csproj",
+  "projectFilePath": "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\Blog_MVC\\Blog_MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Melih\\.nuget\\packages\\closedxml\\0.96.0\\closedxml.0.96.0.nupkg.sha512",
     "C:\\Users\\Melih\\.nuget\\packages\\documentformat.openxml\\2.16.0\\documentformat.openxml.2.16.0.nupkg.sha512",

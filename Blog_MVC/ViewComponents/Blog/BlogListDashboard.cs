@@ -9,7 +9,7 @@ namespace Blog_MVC.ViewComponents.Blog
         BlogManager bm = new BlogManager(new EfBlogRepository());
         public IViewComponentResult Invoke()
         {
-            //BU SINIF blogu kategorileri ile getir
+            
             var values = bm.GetBlogListWithCategory();
             return View(values);
         }

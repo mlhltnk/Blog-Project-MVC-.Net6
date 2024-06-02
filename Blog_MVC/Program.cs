@@ -11,7 +11,7 @@ builder.Services.AddControllersWithViews();
 
 
 
-builder.Services.AddMvc(config=>         //ÝDENTÝTYDEN SONRA YAZDIM***
+builder.Services.AddMvc(config=>         
 {
     var policy =new AuthorizationPolicyBuilder()
     .RequireAuthenticatedUser()
@@ -21,14 +21,14 @@ builder.Services.AddMvc(config=>         //ÝDENTÝTYDEN SONRA YAZDIM***
 
 
 
-builder.Services.AddDbContext<Context>();                   //ÝDENTÝTY KÜTÜPHANESÝ ÝÇÝN EKLENDÝ
+builder.Services.AddDbContext<Context>();                   
 
 
 
 builder.Services.AddIdentity<AppUser, AppRole>(x=>
 {
-    x.Password.RequireUppercase = false;                    //ÝDENTÝTYDE ÝSTEMEDÝÐÝMÝZ KURALLARI FALSE YAPMAK
-    x.Password.RequireNonAlphanumeric = false;              //ÝDENTÝTYDE ÝSTEMEDÝÐÝMÝZ KURALLARI FALSE YAPMAK
+    x.Password.RequireUppercase = false;                    
+    x.Password.RequireNonAlphanumeric = false;              
 })
     .AddEntityFrameworkStores<Context>();    
 
@@ -37,21 +37,21 @@ builder.Services.AddIdentity<AppUser, AppRole>(x=>
 
 
 
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)    // Çerez Tabanlý Kimlik Doðrulama
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)    
     .AddCookie(options =>
     {
         options.Cookie.Name = "deneme";
-        options.LoginPath = "/Login/index";                                             //cookie bulunamazsa buraya gider
-        options.AccessDeniedPath = "login/index";                                       //yetkisiz kullanýcýlar buraya gider
+        options.LoginPath = "/Login/index";                                         
+        options.AccessDeniedPath = "login/index";                                       
     });
 
 
 
-builder.Services.ConfigureApplicationCookie(options =>                              //ÝDENTÝTY ÝÞLEMÝNDEN SONRA YAZDIM.***
+builder.Services.ConfigureApplicationCookie(options =>                              
 {
     options.Cookie.HttpOnly = true;
-    options.ExpireTimeSpan = TimeSpan.FromMinutes(100);                             //session süresi 100 dk
-    options.AccessDeniedPath = new PathString("/Login/AccessDenied");               //yetkisiz kullanýcýnýn yönlendirileceði sayfa
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(100);                            
+    options.AccessDeniedPath = new PathString("/Login/AccessDenied");               
     options.LoginPath = "/Login/Index/";
     options.SlidingExpiration = true;
 
@@ -90,13 +90,13 @@ app.UseAuthorization();
 
 app.UseEndpoints(endpoints =>
 {
-    endpoints.MapAreaControllerRoute(                                     //AREAS ROUTE tanýmý
+    endpoints.MapAreaControllerRoute(                                     //AREAS ROUTE 
         name: "Admin",
         areaName: "Admin",
         pattern: "Admin/{controller=Category}/{action=Index}/{id?}"
     );
 
-    endpoints.MapControllerRoute(                                        //AREAS ROUTE tanýmý
+    endpoints.MapControllerRoute(                                        //AREAS ROUTE 
         name: "area",
         pattern: "{area:exists}/{controller}/{action}/{id?}"
     );

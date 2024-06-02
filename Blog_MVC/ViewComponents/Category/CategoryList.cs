@@ -10,7 +10,7 @@ namespace Blog_MVC.ViewComponents.Category
 		CategoryManager cm = new CategoryManager(new EfCategoryRepository());
 
 
-		//BU Sınıf BLOGREADALL SAYFASINDAKİ KATEGORİLER KISMINI GETİRİYOR
+		
 		public IViewComponentResult Invoke()
 		{
 			var values = cm.TGetlist();

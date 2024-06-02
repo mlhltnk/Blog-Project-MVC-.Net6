@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BusinessLayer
-build_property.ProjectDir = C:\Users\Melih\Desktop\BlogMVC\Blog_MVC\BusinessLayer\
+build_property.ProjectDir = C:\Users\Melih\Desktop\Github\Blog_MVC\Blog-Project-MVC\BusinessLayer\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

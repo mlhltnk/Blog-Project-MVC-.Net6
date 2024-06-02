@@ -24,7 +24,7 @@ namespace EntityLayer.Concrete
 
         public bool WriterStatus { get; set; }
 
-		public List<Blog> Blogs { get; set; }  //bir categorinin birden çok writer'ı olabilir
+		public List<Blog> Blogs { get; set; }  
 
         public virtual ICollection<Message2> MessageSender { get; set; }  //withmany
         public virtual ICollection<Message2> MessageReceiver { get; set; }   

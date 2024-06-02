@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class UserManager : IUserService  //identityden sonra yaptık
+    public class UserManager : IUserService  
     {
         IUserDal _userDal;
 
@@ -30,7 +30,7 @@ namespace BusinessLayer.Concrete
 
         public AppUser TGetById(int id)
         {
-            return _userDal.GetById(id);   //idye göre userdalın verileri getirecek  (bunun yerine findbynameasync kullandık bunu 2. yöntem olarak yazdım)
+            return _userDal.GetById(id);  
         }
 
         public List<AppUser> TGetlist()
@@ -40,7 +40,7 @@ namespace BusinessLayer.Concrete
 
         public void TUpdate(AppUser t)
         {
-            _userDal.Update(t);   //güncelleme işlemi (bunun yerine updateasync kullandık bunu 2. yöntem olarak yazdım)
+            _userDal.Update(t);   
         }
     }
 }

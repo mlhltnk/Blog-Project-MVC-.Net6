@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj": {}
+    "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\DataAccessLayer\\DataAccessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\Melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -38,6 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -89,18 +94,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\EntityLayer\\EntityLayer.csproj",
+        "projectPath": "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\EntityLayer\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\Melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -123,6 +128,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -164,7 +174,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

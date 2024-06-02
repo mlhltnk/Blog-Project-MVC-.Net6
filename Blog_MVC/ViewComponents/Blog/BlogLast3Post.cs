@@ -9,7 +9,7 @@ namespace Blog_MVC.ViewComponents.Blog
 		BlogManager bm = new BlogManager(new EfBlogRepository());
 		public IViewComponentResult Invoke()
 		{
-			//BU SINIF footera SON 3 BLOGU GETİRİYOR
+			
 			var values = bm.GetLast3Blog();
 			return View(values);
 		}

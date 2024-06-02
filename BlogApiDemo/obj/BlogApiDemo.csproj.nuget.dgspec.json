@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj": {}
+    "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\BlogApiDemo\\BlogApiDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj": {
+    "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\BlogApiDemo\\BlogApiDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj",
+        "projectUniqueName": "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\BlogApiDemo\\BlogApiDemo.csproj",
         "projectName": "BlogApiDemo",
-        "projectPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BlogApiDemo\\BlogApiDemo.csproj",
+        "projectPath": "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\BlogApiDemo\\BlogApiDemo.csproj",
         "packagesPath": "C:\\Users\\Melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Melih\\Desktop\\BlogMVC\\Blog_MVC\\BlogApiDemo\\obj\\",
+        "outputPath": "C:\\Users\\Melih\\Desktop\\Github\\Blog_MVC\\Blog-Project-MVC\\BlogApiDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -84,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

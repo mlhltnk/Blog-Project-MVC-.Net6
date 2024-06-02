@@ -12,7 +12,7 @@ namespace Blog_MVC.Controllers
             return View();
         }
 
-        public IActionResult AllNotification()  //tüm bildirimleri görüntüleyeceğim 
+        public IActionResult AllNotification() 
         {
             var values=nm.TGetlist();
 

@@ -4,17 +4,16 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();              //KENDÝM EKLEDÝÐÝM CONTROLLERI SWAGGERDA GÖRMEK ÝÇÝN EKLEDÝM
+builder.Services.AddControllers();                                                                //KENDÝM EKLEDÝÐÝM CONTROLLERI SWAGGERDA GÖRMEK ÝÇÝN EKLEDÝM
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
 
-
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(x=>                       //JSON WEB TOKEN YAPILANDIRMASI***
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(x=>        //********JSON WEB TOKEN YAPILANDIRMASI****************
 {
-    x.RequireHttpsMetadata = false;                              //https gerekmiyor demektir
+    x.RequireHttpsMetadata = false;                                                                //https olmasý gerekmiyor anlamýna gelir
     x.TokenValidationParameters = new
     Microsoft.IdentityModel.Tokens.TokenValidationParameters
     {
@@ -25,7 +24,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         ValidateLifetime = true,
         ClockSkew = TimeSpan.Zero
     };
-});
+});                                                                                               //******************************************************
 
 
 
@@ -41,6 +40,7 @@ if (app.Environment.IsDevelopment())
 
 
 app.MapControllers();                      //CONTROLLERDAKÝ ROUTE ÝÞLEMÝNÝN ÇALIÞMASI ÝÇÝN BUNU EKLEMEN LAZIM
+
 
 app.UseHttpsRedirection();
 
@@ -65,7 +65,7 @@ app.MapGet("/weatherforecast", () =>
 .WithName("GetWeatherForecast");
 
 
-app.UseAuthentication();       //JWT ÝÇÝN EKLEDÝM
+app.UseAuthentication();         //JWT ÝÇÝN EKLEDÝM
 
 app.UseAuthorization();          //JWT ÝÇÝN EKLEDÝM
 

@@ -19,49 +19,41 @@ namespace BusinessLayer.Concrete
 			_blogdal = blogdal;
 		}
 
-		//public void BlogAdd(Blog blog)
-		//{
-		//	throw new NotImplementedException();
-		//}
 
-		//public void BlogDelete(Blog blog)
-		//{
-		//	throw new NotImplementedException();
-		//}
-
-		//public void BlogUpdate(Blog blog)
-		//{
-		//	throw new NotImplementedException();
-		//}
-
-		public List<Blog> GetBlogListWithCategory()   //SPESİFİK İMZASI VAR
-		{
-			return _blogdal.GetListWithCategory();
+		public List<Blog> GetBlogListWithCategory()   
+        {
+            return _blogdal.GetListWithCategory();
 		}
 
-        public List<Blog> GetBlogListByWriter(int id)    //SPESİFİK İMZASI VAR, yazara göre blog getirme işlemi
+
+        public List<Blog> GetBlogListByWriter(int id)    
+                                                      
         {
-            return _blogdal.GetListAll(x => x.WriterId == id);  //writerid'si dışardan gelen id'ye eşit olanları listele
+            return _blogdal.GetListAll(x => x.WriterId == id);  
         }
 
-		public List<Blog> GetListWithCategoryByWriterBlogManager(int id)   /*İMZASI YOK DİREK BURADA OLUŞTURDUK*/
-		{
-			return _blogdal.GetListWithCategoryByWriter(id);   //GetListWithCategoryByWriter include metodu içeriyor
+
+
+		public List<Blog> GetBlogListWithCategoryByWriter(int id)    
+                                                                     
+        {
+            return _blogdal.GetListWithCategoryByWriter(id);   
         }
 
 
 
 
-        public List<Blog> GetLast3Blog()       //bunun soyutunu yapmadık direk burada oluşturduk   İMZASI YOK DİREK BURADA OLUŞTURDUK
+        public List<Blog> GetLast3Blog()       
         {
-			return _blogdal.GetListAll().Take(3).ToList(); ;  //son 3 blogu getir(footerda kullanıyoruz)
+			return _blogdal.GetListAll().Take(3).ToList(); ;  
 		}
 
-		public List<Blog> GetBlogByID(int id)  //ID'ye göre blog getir ancak liste formatında getirir.  İMZASI YOK DİREK BURADA OLUŞTURDUK
-		{
+
+
+		public List<Blog> GetBlogByID(int id)   
+        {
 			return _blogdal.GetListAll(x => x.BlogID == id);
-			//GetBlogByID metodu, _blogdal üzerinden GetListAll metodunu kullanarak belirtilen ID'ye sahip blog gönderilerini getirir ve listesini döndürür
-			//Burada; belirtilen ID'ye sahip blog gönderilerini getirilmesi işlemi, GenericRepository'de belirtilen "filter" değerine karşılık gelir.
+
 		}
 
 	
@@ -88,7 +80,7 @@ namespace BusinessLayer.Concrete
 
         public List<Blog> TGetlist()
         {
-            return _blogdal.GetListAll();  //tüm blog listesini getir
+            return _blogdal.GetListAll();  
         }
     }
 }

@@ -11,8 +11,8 @@ namespace EntityLayer.Concrete
         public int BlogRaytingID { get; set; }
 
         public int BlogID { get; set; }
-        public int BlogTotalScore { get; set; }  //toplamscore
-        public int BlogRaytingCount { get; set; }  //reyting değerlendirme sayısı
+        public int BlogTotalScore { get; set; }  
+        public int BlogRaytingCount { get; set; }  
     
     }
 }

@@ -10,7 +10,7 @@ namespace Blog_MVC.ViewComponents.Writer
         public IViewComponentResult Invoke()
         {
 
-            var values = nm.TGetlist();  //bütün değerleri getirsin
+            var values = nm.TGetlist(); 
             return View(values);
         }
     }

@@ -2,7 +2,7 @@
 var builder = WebApplication.CreateBuilder(args);
 
 
-builder.Services.AddControllers();              //KENDÝM EKLEDÝÐÝM CONTROLLERI SWAGGERDA GÖRMEK ÝÇÝN EKLEDÝM
+builder.Services.AddControllers();             
 
 
 builder.Services.AddEndpointsApiExplorer();
@@ -20,7 +20,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapControllers();                         //CONTROLLERDAKÝ ROUTE ÝÞLEMÝNÝN ÇALIÞMASI ÝÇÝN BUNU EKLEMEN LAZIM
+app.MapControllers();                        
 
 var summaries = new[]
 {

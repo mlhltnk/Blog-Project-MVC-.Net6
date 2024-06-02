@@ -13,12 +13,12 @@ namespace BlogApiDemo.Domain.Controllers
         {
             using var c = new Context();
             var values = c.Employees.ToList();
-            return Ok(values);   //API'lar defaultta Ok ile 200 değeri döndürülür.
+            return Ok(values);  
         }
 
         [HttpPost]
 
-        public IActionResult EmployeeAdd(Employee employee)    //ekleme işlemi
+        public IActionResult EmployeeAdd(Employee employee)   
         {
             using var c = new Context();
             c.Add(employee);
@@ -27,13 +27,13 @@ namespace BlogApiDemo.Domain.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult EmployeeGet(int id)    //idye göre veri getirme
+        public IActionResult EmployeeGet(int id)    
         {
             using var c = new Context();
-            var employee = c.Employees.Find(id);  //idyi bul
+            var employee = c.Employees.Find(id);  
 			if (employee == null)
             {
-                return NotFound();   //olmayan id gelirse notfound döndür(404)
+                return NotFound();   
             }
             else
             {
@@ -41,11 +41,11 @@ namespace BlogApiDemo.Domain.Controllers
             }
         }
 
-        [HttpDelete("{id}")]        //silme işlemi
+        [HttpDelete("{id}")]        
         public IActionResult EmployeeDelete(int id)
         {
             using var c = new Context();
-            var employee=c.Employees.Find(id);   //idyi bul
+            var employee=c.Employees.Find(id);   
             if(employee==null)
             {
 				return NotFound();
@@ -59,10 +59,10 @@ namespace BlogApiDemo.Domain.Controllers
         }
 
         [HttpPut]
-        public IActionResult EmployeeUpdate(Employee employee)  //güncelleme işlemi  //swaggerda hem id hem name alanını değişmemiz gerekecek
+        public IActionResult EmployeeUpdate(Employee employee)  
         {
             using var c = new Context();
-            var emp = c.Find<Employee>(employee.ID);  //idyi bul
+            var emp = c.Find<Employee>(employee.ID);  
 			if (employee == null)
 			{
 				return NotFound();

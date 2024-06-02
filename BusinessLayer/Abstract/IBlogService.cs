@@ -9,19 +9,19 @@ namespace BusinessLayer.Abstract
 {
 	public interface IBlogService:IGenericService<Blog>
 	{
-		//void BlogAdd(Blog blog);
+	
 
-		//void BlogDelete(Blog blog);
+		List<Blog> GetBlogListWithCategory(); 
 
-		//void BlogUpdate(Blog blog);
+		List<Blog> GetBlogListByWriter(int id);  
 
-		//List<Blog> Getlist();
+        List<Blog> GetBlogListWithCategoryByWriter(int id);
 
-		//Blog GetById(int id);
 
-		List<Blog> GetBlogListWithCategory();  //Blog->index sayfasında categoryleri getirme işlemi(blog listesini kategori ile getir)
+        List<Blog> GetLast3Blog();
 
-		List<Blog> GetBlogListByWriter(int id);  //bloglistesini yazarla getir ama dışardan bir id parametresi al ona göre getir öyle getir
 
-	}
+        List<Blog> GetBlogByID(int id);
+
+    }
 }

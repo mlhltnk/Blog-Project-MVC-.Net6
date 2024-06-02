@@ -28,11 +28,11 @@ namespace Blog_MVC.Controllers
 			p.CommentStatus = true;
 			p.BlogID = 2;
 			cm.CommentAdd(p);
-			Response.Redirect("/Blog/BlogReadAll/" + 1);   //yorum yazıp yorumu farklı dbye kaydettirme işlemi
+			Response.Redirect("/Blog/BlogReadAll/" + 1);   
 			return PartialView();
 		}
 
-		public PartialViewResult CommentListByBLog(int id) //Blogtaki yorum listesi
+		public PartialViewResult CommentListByBLog(int id) 
 		{
 			var values = cm.Getlist(id);
 			return PartialView(values);
